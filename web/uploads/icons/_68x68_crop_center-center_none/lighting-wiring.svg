@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" width="68px" height="68px" viewBox="0 0 100 100" fill="none">
+  <path d="M31.25 75H37.5V100H31.25V75Z" fill="#F8B4B4"></path>
+  <path d="M68.75 100H62.5V75H68.75V100Z" fill="#F8B4B4"></path>
+  <path d="M50 18.75C63.8072 18.75 75 29.9428 75 43.75V68.75H25V43.75C25 29.9428 36.1928 18.75 50 18.75Z" fill="#F8B4B4"></path>
+  <path d="M46.875 45.8863V68.75H53.125V45.8863L59.0453 34.0453L53.4547 31.25L50 38.1592L46.5453 31.25L40.9547 34.0453L46.875 45.8863Z" fill="#F05252"></path>
+  <path d="M18.75 62.5H81.25V81.25H18.75V62.5Z" fill="#F05252"></path>
+  <path d="M62.5 75H68.75V81.25H62.5V75Z" fill="#C81E1E"></path>
+  <path d="M31.25 75H37.5V81.25H31.25V75Z" fill="#C81E1E"></path>
+  <path d="M25 62.5H75V68.75H25V62.5Z" fill="#C81E1E"></path>
+  <path d="M16.8508 15.0248L21.2696 10.606L30.1071 19.4435L25.6883 23.8623L16.8508 15.0248Z" fill="#F05252"></path>
+  <path d="M6.25 46.875V40.625H18.75V46.875H6.25Z" fill="#F05252"></path>
+  <path d="M81.25 46.875V40.625H93.75V46.875H81.25Z" fill="#F05252"></path>
+  <path d="M74.3135 23.8718L69.8947 19.4531L78.7322 10.6156L83.151 15.0343L74.3135 23.8718Z" fill="#F05252"></path>
+  <path d="M53.125 12.5H46.875V0H53.125V12.5Z" fill="#F05252"></path>
+</svg>

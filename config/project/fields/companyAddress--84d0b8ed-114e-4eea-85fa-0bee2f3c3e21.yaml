@@ -1,0 +1,23 @@
+columnSuffix: mksdkmlj
+contentColumnType: text
+fieldGroup: 79102c84-5b2a-46cd-97a1-218d4bbba103 # Common
+handle: companyAddress
+instructions: null
+name: 'Company Address'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 8241036e-0b6d-4441-b0d6-ec8f9556f979 # custom
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,0 +1,81 @@
+  
+{% extends "_layout.twig" %}
+{# Images on this page weight #}
+{% set imgQuality = {
+  quality: 60,
+} %}
+{# image selection #}
+{% set asset1 = entry.imageOne.one() %}
+
+
+{% block content %}
+  <div class="style-5 contact contact-page">
+    <div class="">
+      <div class="d-lg-flex">
+        <div class="dark half left bg-red">
+          <div class="max-800">
+
+            <div>
+              <p class="pre-header">WE’RE ALL EARS</p>
+              <h1>Contact Us </h1>
+            </div>
+  
+             <div class="divider-detail"> 
+              {% include '_partials/svg/sm-cap-red.svg' %}
+            </div>
+  
+            <div>
+              <p class="intro-text">
+                We serve residents and business from Wellington to Ōtaki and everywhere in between. Call us to talk through your project or email our team for a quote. We’ll get back to you as soon as we can.
+              </p>
+
+              <div class="details-wrapper">
+                <div class="d-md-flex flex-wrap justify-content-between">
+
+
+                  <div class="contact-detail">
+                    <div class="">
+                      <img src="/uploads/siteImages/flag.svg" alt="">
+                    </div>
+                    <div>
+                    <p>Phone us on </br>
+
+                    <a href="tel:{{contactDetails.clickToCall}}">{{contactDetails.phoneNumber}}</a> </p>
+
+                    </div>
+                  </div>
+
+                  <div class="contact-detail">
+                    <div class="">
+                      <img src="/uploads/siteImages/flag.svg" alt="">
+                    </div>
+                    <div><p>{{contactDetails.companyAddress}}</p></div>
+                  </div>
+
+                  <div class="contact-detail">  
+                    <div class="">
+                     <img src="/uploads/siteImages/email.svg" alt="">
+                    </div>
+                    <div><p>Email us at </br> <a href="mailto:{{contactDetails.email}}">{{contactDetails.email}}</a> </p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="half right bg-grey d-flex justify-content-between flex-column">
+          <div class="bg-img" style="background-image: url('{{ asset1.getUrl(imgQuality) }}">
+          </div>
+          <div class="max-800">
+            <div>
+              <p class="pre-header">WE’RE ALL EARS</p>
+              <h3>Contact Us </h3>
+            </div>
+            <p>  We serve residents and business from Wellington to Ōtaki and everywhere in between. Call us to talk through your project or email our team for a quote. We’ll get back to you as soon as we can.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}

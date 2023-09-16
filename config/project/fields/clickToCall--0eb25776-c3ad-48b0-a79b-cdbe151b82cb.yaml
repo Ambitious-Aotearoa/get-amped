@@ -1,0 +1,19 @@
+columnSuffix: tjuzxovd
+contentColumnType: text
+fieldGroup: 79102c84-5b2a-46cd-97a1-218d4bbba103 # Common
+handle: clickToCall
+instructions: 'Enter full phone number (including country and area code) so that customers can click to call on website'
+name: 'Click to Call'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

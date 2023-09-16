@@ -1,0 +1,19 @@
+columnSuffix: demlardk
+contentColumnType: text
+fieldGroup: 79102c84-5b2a-46cd-97a1-218d4bbba103 # Common
+handle: imageAltText
+instructions: null
+name: 'Image Alt Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

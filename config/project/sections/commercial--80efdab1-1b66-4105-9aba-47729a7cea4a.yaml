@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: commercial
+name: Commercial
+propagationMethod: all
+siteSettings:
+  066dea4a-eb24-4ccd-adb4-07aace1d6c2b: # Get Amped Electrical
+    enabledByDefault: true
+    hasUrls: true
+    template: commercial/_entry
+    uriFormat: 'commercial/{slug}'
+type: channel

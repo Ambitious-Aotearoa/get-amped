@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: testimonials
+name: Testimonials
+propagationMethod: all
+siteSettings:
+  066dea4a-eb24-4ccd-adb4-07aace1d6c2b: # Get Amped Electrical
+    enabledByDefault: true
+    hasUrls: true
+    template: testimonials/_entry
+    uriFormat: 'testimonials/{slug}'
+structure:
+  maxLevels: null
+  uid: ec788f39-3d26-4fb2-9f88-79ecc68fce83
+type: structure

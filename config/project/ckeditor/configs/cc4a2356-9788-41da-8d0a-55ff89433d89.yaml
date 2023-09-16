@@ -1,0 +1,10 @@
+headingLevels:
+  - 2
+listPlugin: List
+name: Test
+toolbar:
+  - '|'
+  - bold
+  - italic
+  - link
+  - sourceEditing

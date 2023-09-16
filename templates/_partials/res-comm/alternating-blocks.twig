@@ -1,0 +1,56 @@
+{% set imgQuality = {
+  quality: 60,
+} %}
+
+
+{# Residential/Commercial matric block #}
+{% set pageContent = entry.pageContentGroup.all() %}
+<div class="style-5 sec-2" >
+    {% for contentBlock in pageContent %}
+    {# Memoize the block type’s handle so we can use it later: #}
+    {% set blockType = contentBlock.type.handle %}
+
+    <div class="alternate">
+        <div class="d-lg-flex">
+            <div class="half left bg-grey">
+                <div class="max-800">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <p class="pre-header">{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</p>
+                            {% if blockType == 'pageContent' %}
+                                <h2>{{contentBlock.heading}}</h2>
+                            {% endif %}
+                        </div>
+                        <div class="iconStyle">
+                            {% if blockType == 'pageContent' %}
+                                    <img src="{{ contentBlock.icon[0].getUrl(imgQuality) }}" alt="">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div id="" class="right-text mg-top-lg">
+                        <p>{{contentBlock.text}}</p>
+
+                        <div class="btn dark">
+                            {% if blockType == 'pageContent' and contentBlock.buttonLink|length %}
+                            <a href="{{ contentBlock.buttonLink[0].getUrl() }}">
+                                {% include '_partials/svg/btn-icon-left.svg' %}
+                                <p>{{contentBlock.buttonText}}</p>
+                                    {% include '_partials/svg/btn-icon-arrow.svg' %}
+                            </a>
+                        {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% set image = contentBlock.image.one() %}
+            {% if image %}
+                <div class="half right bg-img" style="background-image: url('{{ image.getUrl(imgQuality) }}');"></div>
+            {% else %}
+                <div class="half right bg-img" style="background-image: url('/uploads/images/placeholder-2.jpg');"></div>
+            {% endif %}
+
+        </div>
+    </div>
+    {% endfor %}
+</div>

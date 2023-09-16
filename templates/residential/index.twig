@@ -1,0 +1,69 @@
+
+{% extends "_layout.twig" %}
+
+{# Images on this page weight #}
+
+{% set posts = craft.entries().section('residential').all() %}
+{% block content %}
+
+<div class="residential">
+   <div class="container-fluid dark hero-header" >
+      <div class="wrapper">
+         <div class="d-flex flex-column">
+            <div class="">
+               <h1>Residential electrical work</h1>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<div class="wrapper-svg">
+   <div class="residential-svg">
+      <svg width="2000" height="500" viewBox="0 0 2000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1104.37 431.818L1104.37 68.1816L896.633 68.1816L896.633 431.818L1104.37 431.818Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M855.086 367.935L855.086 132.062" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M0 250L855 250" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M1146 131.63L1146 367.502" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+      <path d="M2001.09 249.564L1146.09 249.564" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+      </svg>
+   </div>
+   <div class="bg-img bg-height" style="background-image: url('/uploads/siteImages/residential.jpg');">
+   </div>
+</div>
+
+   <div class="container-fluid dark style-2" >
+      <div class="wrapper">
+         <div class="d-lg-flex under-img">
+            <div class="left-size">
+               <h3>Electrical work that keeps your house humming</h3>
+            </div>
+            <div class="right-size">
+               <p class="intro-text">
+                  Friendly, fast and always there when you need us. Whether you are remodelling your home, need a new piece of equipment installed, or just need an electrician in a hurry, we’re here to answer the call.
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class=" style-7 pod-wrapper">
+      <div>
+         <div>
+            <div class="d-flex  flex-wrap  pods pod-8">
+               {% for post in posts %}
+               <a  href='{{ post.url }}' class="d-flex flex-column justify-content-left pod">
+                  <p class="pre-header">{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</p>
+                  <div class="">
+                     <img src="{{ post.pageIcon[0].getUrl() }}" alt="{{post.title}} decorative icon">
+                  </div>
+                  <h4>{{post.title}}</h4>
+               </a>
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock %}
+
+

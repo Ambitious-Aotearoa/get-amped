@@ -1,0 +1,11 @@
+headingLevels:
+  - 2
+listPlugin: List
+name: 'Heading Style'
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - sourceEditing

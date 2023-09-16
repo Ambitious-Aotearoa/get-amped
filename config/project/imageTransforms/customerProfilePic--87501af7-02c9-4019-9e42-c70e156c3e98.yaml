@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: customerProfilePic
+height: 50
+interlace: none
+mode: crop
+name: 'Customer Profile Pic'
+position: center-center
+quality: 60
+upscale: true
+width: 50

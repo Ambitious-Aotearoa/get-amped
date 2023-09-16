@@ -1,0 +1,66 @@
+
+{% set residential = craft.entries().section('residential').all() %}
+{% set commercial = craft.entries().section('commercial').all() %}
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{{ siteUrl }}"><img src="{{ contactDetails.companyLogo[0].getUrl() }}" alt="{{contactDetails.imageAltText}}"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+       <li class="nav-item">
+        <a class="nav-link" href="/residential">Residential</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Residential
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {% for post in residential  %}
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        {% endfor %}
+        </div>
+      </li>
+
+       <li class="nav-item">
+        <a class="nav-link" href="/commercial">Commercial</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Commercial
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {% for post in commercial  %}
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        {% endfor %}
+        </div>
+      </li>  
+       <li class="nav-item">
+        <a class="nav-link" href="/about">About Us</a>
+      </li>
+    </ul>
+    <div class="my-2 my-lg-0 btn dark">
+              <a href="/contact">
+            <svg class='btn-icon' width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.395 1.91535L25.8714 12L11.395 22.0846V1.91535Z" stroke="#F98080" stroke-width="2"/>
+                <path d="M25.3054 12H36.3054" stroke="#F98080" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M0 12H11" stroke="#F98080" stroke-width="2" stroke-miterlimit="10"/>
+            </svg>
+            <p>Contact Us</p>
+            <div class="btn-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.4142 12.0001L14 20.4144L12.5858 19.0002L18.5858 13.0001H2V11.0001H18.5858L12.5858 5.00015L14 3.58594L22.4142 12.0001Z" fill="white"/>
+                </svg>
+            </div>
+        </a>
+    </div>
+  </div>
+</nav>
+
+

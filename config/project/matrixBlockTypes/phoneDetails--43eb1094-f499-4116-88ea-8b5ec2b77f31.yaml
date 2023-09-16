@@ -1,0 +1,80 @@
+field: 040439e7-3d13-4c0c-be0e-e2ca6899f7ef # Phone Number
+fieldLayouts:
+  691dfc6f-5e77-4115-9ea8-60f21ea8a96a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0671cdae-7383-4eb7-bb52-3e8e656ec1d8 # Area Code
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90e32ad4-7e19-467e-a134-93ff8a8c5935
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 94d3c156-1ec0-4418-9e6d-9aa11592f3db # Phone Number
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 840a7fbe-0bd3-4151-a401-04f533e0d60f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a1c16094-15b5-41ab-8c08-75e487651735
+        userCondition: null
+fields:
+  94d3c156-1ec0-4418-9e6d-9aa11592f3db: # Phone Number
+    columnSuffix: tsiolcwa
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: phoneNumber
+    instructions: null
+    name: 'Phone Number'
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: none
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  0671cdae-7383-4eb7-bb52-3e8e656ec1d8: # Area Code
+    columnSuffix: bwqpsrqd
+    contentColumnType: integer(10)
+    fieldGroup: null
+    handle: areaCode
+    instructions: null
+    name: 'Area Code'
+    searchable: false
+    settings:
+      decimals: 0
+      defaultValue: null
+      max: null
+      min: 0
+      prefix: null
+      previewCurrency: null
+      previewFormat: none
+      size: null
+      suffix: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+handle: phoneDetails
+name: 'Phone Details'
+sortOrder: 1

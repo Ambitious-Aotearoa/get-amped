@@ -1,0 +1,289 @@
+field: 7d84bf35-37f7-4879-8aab-d210e0f06bbe # Page Content Group
+fieldLayouts:
+  d78f11bc-78d0-4e70-b850-9f050cc4a020:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a66f1c16-63f3-45d2-a125-ca3019d9fbef # Heading 
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99ff0844-7798-436a-975f-e143aaa739be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4dfe1365-3e16-4576-b624-26977c15aba9 # Icon
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95292e2b-8f77-44e6-a32c-1fa2760123e3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 815517b8-7a33-4572-b570-300d8c06c083 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 227c5440-6718-4a97-87d2-62631fe64eb8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 587b4720-1e96-4fbc-8afd-50ea3320e482 # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f79b0c2-32a2-4103-8ced-93baebcb3462
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: df318d16-61ea-4966-9d35-98451a6b6436 # Button text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9b4a856-683e-42fc-9ae3-a7a14da9e9c6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5ad14467-ae6e-43a2-9412-7e6d43312181 # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8dbfa19a-4248-469c-a417-0a874df27ad0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7d5bfb68-de81-4282-b98d-9c1d7417e71d
+        userCondition: null
+fields:
+  4dfe1365-3e16-4576-b624-26977c15aba9: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: null
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:816166c2-da71-4678-9bf0-2245eda0b450' # icons
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:c9b4968f-ad0f-4253-ab09-36fae6b07175' # images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:816166c2-da71-4678-9bf0-2245eda0b450' # icons
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  5ad14467-ae6e-43a2-9412-7e6d43312181: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:c9b4968f-ad0f-4253-ab09-36fae6b07175' # images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:c9b4968f-ad0f-4253-ab09-36fae6b07175' # images
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources:
+        - 'volume:c9b4968f-ad0f-4253-ab09-36fae6b07175' # images
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  587b4720-1e96-4fbc-8afd-50ea3320e482: # Button Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonLink
+    instructions: null
+    name: 'Button Link'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: true
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  815517b8-7a33-4572-b570-300d8c06c083: # Text
+    columnSuffix: jggedbco
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: e44a2589-0664-42d6-bc80-ad53f1bd9c23 # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  a66f1c16-63f3-45d2-a125-ca3019d9fbef: # Heading 
+    columnSuffix: jjayczla
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: 'Make sure h2 is selected from the dropdown list'
+    name: 'Heading '
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: cb2638c7-1bcf-4d16-ac97-5243e739f82e # Heading Style
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  df318d16-61ea-4966-9d35-98451a6b6436: # Button text
+    columnSuffix: znhbkvgm
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: pageContent
+name: 'Page Content'
+sortOrder: 1

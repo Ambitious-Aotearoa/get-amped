@@ -1,0 +1,106 @@
+fieldLayouts:
+  4cbc1ab3-d230-482a-a397-f2bca472dd1f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: 'Pre Header Title'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c53d391f-8d03-4376-8214-0d58c6e35616
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 96afbf09-9968-48cd-a3ac-28c945804de1 # Page Icon
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d3defe8-bd67-455d-a0a5-ba72779f6dfc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 523aafbc-31c5-41b2-9f62-b969b0b8f7d9 # Hero Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db7e322f-d86e-4167-bc17-edda3de086de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d0183e8e-86a9-478a-a777-5f1b6864a2b9 # Hero Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5328a98d-0c5f-46bd-960e-60d6d2673411
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: eb99e08b-0242-4eaf-beeb-d1234d9dc78c # Hero Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e3ea2f09-c02a-43ac-871c-e0eb45fcf33b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7d84bf35-37f7-4879-8aab-d210e0f06bbe # Page Content Group
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03cd6ba2-e224-4e75-b779-e9424f2496e3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 13aab580-58bc-46b5-bcf1-51e1d19b29e7
+        userCondition: null
+handle: Pages
+hasTitleField: true
+name: Pages
+section: 80efdab1-1b66-4105-9aba-47729a7cea4a # Commercial
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

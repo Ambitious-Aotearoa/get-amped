@@ -1,0 +1,12 @@
+columnSuffix: ssgalzto
+contentColumnType: string
+fieldGroup: 79102c84-5b2a-46cd-97a1-218d4bbba103 # Common
+handle: email
+instructions: 'Company email address'
+name: Email
+searchable: false
+settings:
+  placeholder: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

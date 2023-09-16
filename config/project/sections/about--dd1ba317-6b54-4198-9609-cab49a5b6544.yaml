@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: about
+name: About
+propagationMethod: all
+siteSettings:
+  066dea4a-eb24-4ccd-adb4-07aace1d6c2b: # Get Amped Electrical
+    enabledByDefault: true
+    hasUrls: true
+    template: about/_entry
+    uriFormat: about
+type: single

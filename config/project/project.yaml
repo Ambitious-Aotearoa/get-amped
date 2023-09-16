@@ -1,0 +1,118 @@
+dateModified: 1694751182
+email:
+  fromEmail: jennifer@ambitious.co.nz
+  fromName: 'Get Amped Electrical'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads/images'
+    type: craft\fs\Local
+    url: '@web/uploads/images'
+  hardDiskIcons:
+    hasUrls: true
+    name: 'Hard Disk Icons'
+    settings:
+      path: '@webroot/uploads/icons'
+    type: craft\fs\Local
+    url: '@web/uploads/icons'
+  hardDiskSite:
+    hasUrls: true
+    name: 'Hard Disk SIte'
+    settings:
+      path: '@webroot/uploads/siteImages'
+    type: craft\fs\Local
+    url: '@web/uploads/siteImages'
+meta:
+  __names__:
+    0c06df76-91c9-4ac1-84b8-cfdc7a46f908: Email # Email
+    0eb25776-c3ad-48b0-a79b-cdbe151b82cb: 'Click to Call' # Click to Call
+    1c335a6a-5d4e-4d18-8c88-0babc7a2aaca: 'Company Logo' # Company Logo
+    1e8df28a-aabc-4dba-915c-d5ce587b0bbd: Page # Page
+    1eafc1d5-0c7b-4b2d-aa75-aaf4c407d2d6: 'Image Alt Text' # Image Alt Text
+    2a68880a-68ad-475d-a31d-b44a4cead789: 'Blog Content' # Blog Content
+    4b550893-38e4-46d7-ab57-550e9d8ca350: Quote # Quote
+    4dfe1365-3e16-4576-b624-26977c15aba9: Icon # Icon
+    5ad14467-ae6e-43a2-9412-7e6d43312181: Image # Image
+    5fa1d125-79ef-4656-afd3-f949f55040e0: 'Profile Pic' # Profile Pic
+    6ff06d29-690e-4add-9601-f64717497280: Contact # Contact
+    7d84bf35-37f7-4879-8aab-d210e0f06bbe: 'Page Content Group' # Page Content Group
+    43eb1094-f499-4116-88ea-8b5ec2b77f31: 'Phone Details' # Phone Details
+    58a9b8d9-a27a-4742-a4f2-9fdf06b3cd76: Quote # Quote
+    066dea4a-eb24-4ccd-adb4-07aace1d6c2b: 'Get Amped Electrical' # Get Amped Electrical
+    073ea9f8-736b-408e-9fb6-12a03213558e: Testimonials # Testimonials
+    80efdab1-1b66-4105-9aba-47729a7cea4a: Commercial # Commercial
+    84d0b8ed-114e-4eea-85fa-0bee2f3c3e21: 'Company Address' # Company Address
+    89f09898-1cd9-4336-9b13-626331b54e96: Pages # Pages
+    94d3c156-1ec0-4418-9e6d-9aa11592f3db: 'Phone Number' # Phone Number
+    96afbf09-9968-48cd-a3ac-28c945804de1: 'Page Icon' # Page Icon
+    424b0abc-4d19-4971-b97e-d17954332d92: Testimonial # Testimonial
+    523aafbc-31c5-41b2-9f62-b969b0b8f7d9: 'Hero Title' # Hero Title
+    587b4720-1e96-4fbc-8afd-50ea3320e482: 'Button Link' # Button Link
+    0671cdae-7383-4eb7-bb52-3e8e656ec1d8: 'Area Code' # Area Code
+    939a82ed-ad48-4e83-b71a-0f3012f6369f: 'Author name' # Author name
+    1058d120-1961-4fab-b32d-9d66766c6da3: 'Image Two' # Image Two
+    3515d6db-6243-4d34-a80a-574f694254f1: 'Blog Intro' # Blog Intro
+    3733d377-59f7-40d4-a946-80540df385ab: Blog # Blog
+    8590bbd2-bc27-4c40-9410-61cb7132fd57: Residential # Residential
+    040439e7-3d13-4c0c-be0e-e2ca6899f7ef: 'Phone Number' # Phone Number
+    48527bb6-858e-4858-b159-48ff4f9ffc9b: 'Blog Image' # Blog Image
+    67726b65-3437-4b3b-83f5-cf19e023d844: Commercial # Commercial
+    79102c84-5b2a-46cd-97a1-218d4bbba103: Common # Common
+    87501af7-02c9-4019-9e42-c70e156c3e98: 'Customer Profile Pic' # Customer Profile Pic
+    201270c4-2e17-430a-a9eb-5d66e718b883: 'Customer Location' # Customer Location
+    815517b8-7a33-4572-b570-300d8c06c083: Text # Text
+    816166c2-da71-4678-9bf0-2245eda0b450: icons # icons
+    8241036e-0b6d-4441-b0d6-ec8f9556f979: custom # custom
+    a6b0622f-f24c-4f99-9b6a-64b9b74f2fb9: 'Author Profile' # Author Profile
+    a66f1c16-63f3-45d2-a125-ca3019d9fbef: 'Heading ' # Heading 
+    b3f7bc1f-9046-40ec-9b7d-b8aa4e0ece45: Blog # Blog
+    b451c696-8da3-42f5-bb8d-cdaa4de9f806: 'Get Amped Electrical' # Get Amped Electrical
+    b693a04c-4627-4787-9ccd-6c59819b9104: 'Page Content' # Page Content
+    b8388f6b-0dd6-4b7e-b5e5-d34493fb1bdd: Home # Home
+    c9b4968f-ad0f-4253-ab09-36fae6b07175: images # images
+    c887d157-58ec-4a89-9fcf-1072a9a8dcf1: 'Site Images' # Site Images
+    cb2638c7-1bcf-4d16-ac97-5243e739f82e: 'Heading Style' # Heading Style
+    cc4a2356-9788-41da-8d0a-55ff89433d89: Test # Test
+    d0183e8e-86a9-478a-a777-5f1b6864a2b9: 'Hero Image' # Hero Image
+    d904efcb-9a19-4a11-bef7-0beec5ee9f95: 'Contact Details' # Contact Details
+    dd1ba317-6b54-4198-9609-cab49a5b6544: About # About
+    ddbcdcc8-6143-482c-ac52-cdebd008eda2: Default # Default
+    df318d16-61ea-4966-9d35-98451a6b6436: 'Button text' # Button text
+    e6ec7bb4-6453-43c8-b021-92810bf52564: Home # Home
+    e9bb13fe-88c7-4929-a873-4f2ff3009c84: 'Image One' # Image One
+    e44a2589-0664-42d6-bc80-ad53f1bd9c23: Simple # Simple
+    eb99e08b-0242-4eaf-beeb-d1234d9dc78c: 'Hero Text' # Hero Text
+    ee32427c-b33a-421d-ad3f-0a403b36171c: Contact # Contact
+    f3d82151-2e87-46ea-b261-21401be9e7b0: Testimonials # Testimonials
+    f508bf38-b99b-43d4-b1de-57e0434a7056: 'Publish date' # Publish date
+    fda1e4ba-87a0-4b92-a3d5-00bec5715df4: Residential # Residential
+    fe457efa-6058-4738-a1e0-518c3c53a03a: About # About
+    fe980643-d3a8-4b2f-86a8-3027e9afb617: Home # Home
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  pitch:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Get Amped Electrical'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

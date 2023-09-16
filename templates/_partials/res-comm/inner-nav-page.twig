@@ -1,0 +1,25 @@
+{% set imgQuality = {
+  quality: 60,
+} %}
+<div>
+{% if entry.title %}
+    <p class="pre-header">{{ entry.title }}</p>
+{% endif %}
+    {% if entry.heroTitle %}
+    <h1>{{ entry.heroTitle }}</h1>
+    {% endif %}   
+</div>
+<div class="svg-wrapper">
+    <div class="divider-detail"> 
+        {% include '_partials/svg/lg-cap-grey.svg' %}
+    </div>
+    <div class="bg-img bg-grad-1 d-flex" style="background-image: url('{{ featureImage.getUrl(imgQuality) }}');">
+        <div class="right-size">
+            <p class="intro-text dark">
+            {% if entry.heroText %}
+                {{entry.heroText}}
+            {% endif %}  
+            </p>
+        </div>
+    </div>
+</div>

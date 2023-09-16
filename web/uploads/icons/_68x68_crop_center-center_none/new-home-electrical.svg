@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" width="68px" height="68px" viewBox="0 0 100 100" fill="none">
+  <g clip-path="url(#clip0_750_8360)">
+    <path d="M81.25 29.0008L50 4.00079L18.75 29.0008V75H81.25V29.0008Z" fill="#F8B4B4"></path>
+    <path d="M14.4531 36.441L50 8.00176L85.5469 36.441L89.4531 31.5582L50 0L10.5469 31.5582L14.4531 36.441Z" fill="#F05252"></path>
+    <path d="M93.75 93.75V87.5H53.125C49.6732 87.5 46.875 84.7018 46.875 81.25V62.5H53.125V81.25H93.75C97.2018 81.25 100 84.0482 100 87.5V93.75C100 97.2018 97.2018 100 93.75 100H0V93.75H93.75Z" fill="#F05252"></path>
+    <path d="M40.625 37.5V25H46.875V37.5H53.125V25H59.375V37.5H71.875V43.75H65.625V56.25C65.625 63.1535 60.0285 68.75 53.125 68.75V75H46.875V68.75C39.9715 68.75 34.375 63.1535 34.375 56.25V43.75H28.125V37.5H40.625Z" fill="#C81E1E"></path>
+  </g>
+  <defs>
+    <clipPath id="clip0_750_8360">
+      <rect width="100" height="100" fill="white"></rect>
+    </clipPath>
+  </defs>
+</svg>

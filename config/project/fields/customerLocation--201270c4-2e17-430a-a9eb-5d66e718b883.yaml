@@ -1,0 +1,19 @@
+columnSuffix: njukmjuf
+contentColumnType: text
+fieldGroup: 073ea9f8-736b-408e-9fb6-12a03213558e # Testimonials
+handle: customerLocation
+instructions: null
+name: 'Customer Location'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

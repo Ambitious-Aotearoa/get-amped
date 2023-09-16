@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 70 70" fill="none">
+  <g clip-path="url(#clip0_753_8485)">
+    <g clip-path="url(#clip1_753_8485)">
+      <path d="M26.25 35H43.75V70H26.25V35Z" fill="#F8B4B4"></path>
+      <path d="M32.9492 48.125H37.3242V56.875H32.9492V48.125Z" fill="#F05252"></path>
+      <path d="M35 61.25C36.2082 61.25 37.1875 62.2293 37.1875 63.4375C37.1875 64.6457 36.2082 65.625 35 65.625C33.7918 65.625 32.8125 64.6457 32.8125 63.4375C32.8125 62.2293 33.7918 61.25 35 61.25Z" fill="#F05252"></path>
+      <path d="M52.5 26.25V35C52.5 37.4162 50.5412 39.375 48.125 39.375H21.875C19.4588 39.375 17.5 37.4162 17.5 35V26.25H13.125V35C13.125 39.8325 17.0425 43.75 21.875 43.75H48.125C52.9575 43.75 56.875 39.8325 56.875 35V26.25H52.5Z" fill="#F05252"></path>
+      <path d="M26.25 39.375H43.75V43.75H26.25V39.375Z" fill="#C81E1E"></path>
+      <path d="M43.75 4.375H65.625L70 30.625H39.375L43.75 4.375Z" fill="#F8B4B4"></path>
+      <path d="M13.125 0H17.5V8.75H13.125V0Z" fill="#F05252"></path>
+      <path d="M4.375 4.375H26.25L30.625 30.625H0L4.375 4.375Z" fill="#F8B4B4"></path>
+      <path d="M13.125 4.375H17.5V8.75H13.125V4.375Z" fill="#C81E1E"></path>
+      <path d="M56.875 8.75H52.5V0H56.875V8.75Z" fill="#F05252"></path>
+      <path d="M52.5 4.375H56.875V8.75H52.5V4.375Z" fill="#C81E1E"></path>
+      <path d="M13.125 26.25H17.5V30.625H13.125V26.25Z" fill="#C81E1E"></path>
+      <path d="M52.5 26.25H56.875V30.625H52.5V26.25Z" fill="#C81E1E"></path>
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0_753_8485">
+      <rect width="70" height="70" fill="white"></rect>
+    </clipPath>
+    <clipPath id="clip1_753_8485">
+      <rect width="70" height="70" fill="white"></rect>
+    </clipPath>
+  </defs>
+</svg>

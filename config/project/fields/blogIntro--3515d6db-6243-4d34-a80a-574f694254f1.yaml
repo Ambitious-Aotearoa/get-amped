@@ -1,0 +1,19 @@
+columnSuffix: qvcafwbu
+contentColumnType: text
+fieldGroup: b3f7bc1f-9046-40ec-9b7d-b8aa4e0ece45 # Blog
+handle: blogIntro
+instructions: null
+name: 'Blog Intro'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

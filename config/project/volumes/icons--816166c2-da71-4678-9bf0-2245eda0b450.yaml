@@ -1,0 +1,43 @@
+fieldLayouts:
+  005a9d6f-4eb2-42b8-a699-388ff29a0b5a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 358eeff9-89fe-439e-be31-8a9540894d69
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c340e7ae-9b74-4754-a656-468aa521dd67
+        userCondition: null
+fs: hardDiskIcons
+handle: icons
+name: icons
+sortOrder: 5
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

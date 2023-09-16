@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contact
+name: Contact
+propagationMethod: all
+siteSettings:
+  066dea4a-eb24-4ccd-adb4-07aace1d6c2b: # Get Amped Electrical
+    enabledByDefault: true
+    hasUrls: true
+    template: contact/_entry
+    uriFormat: contact
+type: single

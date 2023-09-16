@@ -1,0 +1,11 @@
+headingLevels: false
+listPlugin: List
+name: Quote
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - blockQuote
+  - sourceEditing

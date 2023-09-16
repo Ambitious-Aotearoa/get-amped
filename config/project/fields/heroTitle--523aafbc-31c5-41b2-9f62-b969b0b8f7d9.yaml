@@ -1,0 +1,19 @@
+columnSuffix: oyyfsqmz
+contentColumnType: text
+fieldGroup: fda1e4ba-87a0-4b92-a3d5-00bec5715df4 # Residential
+handle: heroTitle
+instructions: null
+name: 'Hero Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

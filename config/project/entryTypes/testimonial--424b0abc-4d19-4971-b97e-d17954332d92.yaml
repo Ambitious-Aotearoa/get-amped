@@ -1,0 +1,82 @@
+fieldLayouts:
+  ab796643-8b0d-4fb4-8dbf-29195558a2ae:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: 'Customer name'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6d483e8a-f554-44cc-bbdf-50074d7c7158
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 201270c4-2e17-430a-a9eb-5d66e718b883 # Customer Location
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49540f44-7643-46fd-88f9-d62dd39c0c0f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5fa1d125-79ef-4656-afd3-f949f55040e0 # Profile Pic
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 747502fe-6e6f-415d-ae1c-ed5aeb2f216f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 58a9b8d9-a27a-4742-a4f2-9fdf06b3cd76 # Quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cac99970-7da6-422f-9edb-da95308e7533
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 96cf967d-1748-4e1f-ab8f-229db1606099
+        userCondition: null
+handle: testimonial
+hasTitleField: true
+name: Testimonial
+section: f3d82151-2e87-46ea-b261-21401be9e7b0 # Testimonials
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

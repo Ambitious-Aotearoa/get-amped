@@ -1,0 +1,84 @@
+fieldLayouts:
+  a7ea60e0-3319-4973-98a3-64982fcabbd3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1c335a6a-5d4e-4d18-8c88-0babc7a2aaca # Company Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0c12bc3-dbff-4fcc-8f33-350a937a0b1f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1eafc1d5-0c7b-4b2d-aa75-aaf4c407d2d6 # Image Alt Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 58a5c5a4-09ed-494f-9e7d-6e212b1ad2cb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0c06df76-91c9-4ac1-84b8-cfdc7a46f908 # Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56a30c8c-0f46-49cc-b3f0-147b37697b2a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 040439e7-3d13-4c0c-be0e-e2ca6899f7ef # Phone Number
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7168f846-e9ea-4a3b-a650-dd970709d31e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0eb25776-c3ad-48b0-a79b-cdbe151b82cb # Click to Call
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b5cb1bd-7f6f-4c19-a909-18533d34b175
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 84d0b8ed-114e-4eea-85fa-0bee2f3c3e21 # Company Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed6dbd14-d186-482e-86fc-cb0dbd4bad0a
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Contact Information'
+        uid: b0be41a1-14bd-43bb-b216-988c72ce92a1
+        userCondition: null
+handle: contactDetails
+name: 'Contact Details'
+sortOrder: 1

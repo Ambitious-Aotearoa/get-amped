@@ -1,0 +1,85 @@
+{% extends "_layout.twig" %}
+
+
+{# Images on this page weight #}
+{% set imgQuality = {
+  quality: 60,
+} %}
+
+{# Home page - image selection #}
+{% set asset1 = entry.imageOne.one() %}
+{% set asset2 = entry.imageTwo.one() %}
+
+
+{% block content %}
+<div class="about">
+  <div class="container-fluid hero-header" >
+      <div class="wrapper">
+          <div class="d-flex flex-column">
+          <div class="">
+          <p class="pre-header">About Us</p>
+              <h1 class="">Service is our speciality</h1>
+          </div>
+          </div>
+      </div>
+  </div>
+  <div class="single-svg">
+      {% include '_partials/svg/lg-round-grey.svg' %}
+  </div>
+
+  <div class="container-fluid style-4 small-image-wrapper" >
+    <div class="wrapper">
+        <div class="d-lg-flex small-image">
+        <div class="left-size">
+            <div class="bg-img" style="background-image: url('{{ asset2.getUrl(imgQuality) }}">
+            </div>
+        </div>
+        <div class="right-size">
+        <p class="intro-text ">
+            We offer a wide range of services, but it’s how we get the job done that really counts. Making sure our customers are comfortable is priority number one. From the moment we step into your home, our team will put you at ease. We can talk through your problem, offer electrical advice and even help you plan your next project. Whatever the job, you’ll get service with a smile from a team that genuinely cares.
+        </p>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="style-5 sec-1" >
+    <div class="">
+      <div class="d-lg-flex">
+        <div class="dark half left bg-red">
+          <div class="max-800 d-flex flex-column justify-content-between h-100">
+            <div class="">
+              <p class="pre-header">OUR DIFERENCE</p>
+              <h2>Happy clients, job done</h2>
+            </div>
+
+            <div class="divider-detail"> 
+              {% include "_partials/svg/sm-cap-red.svg" %}
+            </div>
+
+            <div class="">
+              <p class="intro-text text-right">
+              We’re proud to offer tailoredsolutions for large projects
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="half right bg-grey d-flex justify-content-between flex-column">
+          <div id="test" class="text-right max-800">
+            <p>Our friendly electricians will personally visit your property or site to give advice around best options to suit your needs as well as provide a custom design and quote. We’re also passionate about safety; with over thirty years combined experience in the electrical trade and a strict health and safety policy, you can rest assured that you and your property are in the best of hands.</p>
+          </div>
+
+          <div class="bg-img bg-img-one bg-red" style="background-image: url('{{ asset1.getUrl(imgQuality) }}">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+{% endblock %}

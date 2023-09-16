@@ -1,0 +1,66 @@
+<div class="footer">
+    <div class="container-fluid footer-header">
+        <div class="wrapper">
+            <div>
+                <div class="">
+                    <h2 >Powering Wellington and the Kapiti Coast</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="single-svg">
+        {% include '_partials/svg/lg-round-grey.svg' %}
+    </div>
+
+    <div class="container-fluid footer-nav">
+        <div class="wrapper">
+            <div class="footer-wrapper">
+                <div class="logo">
+                    <img src="{{ contactDetails.companyLogo[0].getUrl() }}" alt="{{contactDetails.imageAltText}}">
+                </div>
+
+                <div class="details">
+                    <div class="sitemap">
+                        <p class="pre-header">Sitemap</p>
+                        <ul>
+                            <li>
+                                <a href="/residential">Residential</a>
+                            </li>
+                            <li>
+                                <a href="/commercial">Commercial</a>
+                            </li>
+                            <li>
+                                <a href="/about-us">About Us</a>
+                            </li>
+                            <li>
+                                <a href="/blogs">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="/vacancies">Vacancies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-us-wrapper">
+                        <p class="pre-header">Contact Us</p>
+                        <ul class='contact-us'>
+                            <li>
+                            <img src="/uploads/siteImages/phone-r.svg" alt="Decorative Icon">
+                                <a href="tel:{{contactDetails.clickToCall}}">{{contactDetails.phoneNumber}}</a>
+                            </li>
+                            <li>
+                            <img src="/uploads/siteImages/flag-r.svg" alt="Decorative Icon">
+                                <a href="https://goo.gl/maps/LpVRFstDB2f5pzuT6" target="_blank">{{contactDetails.companyAddress}}</a>
+                            </li>
+                            <li>
+                            <img src="/uploads/siteImages/email-r.svg" alt="Decorative Icon">
+                                <a href="mailto:{{contactDetails.email}}">{{contactDetails.email}}</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+columnSuffix: iylsdult
+contentColumnType: text
+fieldGroup: 073ea9f8-736b-408e-9fb6-12a03213558e # Testimonials
+handle: quote
+instructions: null
+name: Quote
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 4b550893-38e4-46d7-ab57-550e9d8ca350 # Quote
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

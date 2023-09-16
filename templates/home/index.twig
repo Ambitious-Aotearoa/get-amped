@@ -1,0 +1,310 @@
+{% extends "_layout.twig" %}
+
+
+{# Images on this page weight #}
+{% set imgQuality = {
+  quality: 60,
+} %}
+
+{# Home page - image selection #}
+{% set asset1 = entry.imageOne.one() %}
+{% set asset2 = entry.imageTwo.one() %} 
+
+
+{# Pod content -from these pages #}
+{% set pageRes = craft.entries().section('residential').all() %}
+{% set pageComm = craft.entries().section('commercial').all() %}
+
+
+{# testimonials #}
+{% set myEntryQuery = craft.entries()
+  .section('testimonials')
+  .limit(10) %}
+
+{# Fetch testimonials entries #}
+{% set entries = myEntryQuery.all() %}
+
+{% block content %}
+<div class="homepage">
+<div class="style-5 sec-1" >
+  <div class="">
+    <div class="d-lg-flex">
+      <div class="dark half left bg-red">
+        <div class="max-800 d-flex flex-column justify-content-between h-100">
+          <div class="">
+            <p class="pre-header">OUR DIFERENCE</p>
+            <h2>We’re a small team that’s big on service.</h2>
+          </div>
+
+          <div class="divider-detail"> 
+            <svg width="922" height="29" viewBox="0 0 922 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M739.325 0H715.339V28.7377H739.325C747.236 28.7377 753.632 22.314 753.632 14.3688C753.632 6.42371 747.236 0 739.325 0Z" fill="#F05252"/>
+              <path d="M716.047 7.60742H-658.571" stroke="#F05252" stroke-miterlimit="10"/>
+              <path d="M716.047 21.5537H-658.571" stroke="#F05252" stroke-miterlimit="10"/>
+              <path d="M1257.27 14.3691H753.167" stroke="#F05252" stroke-miterlimit="10"/>
+              </svg>
+          </div>
+
+          <div class="">
+            <p class="intro-text text-right">
+            Any local sparkie can tell you about the quality of their work...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="half right bg-grey d-flex justify-content-between flex-column">
+        <div id="test" class="text-right max-800">
+          <p>The difference for us is in the care and attention we take on the job site, making sure our work is done right and tidied away first time, every time. Taking the time to talk through your problem or helping you plan your next project makes all the difference. When you work with us, you get service with a smile from a team that genuinely cares. That care filters through everything we do. It's why we prioritise fast response rates, high availability, and a transparent approach to pricing. We’re more than just reliable electricians, we’re the team you’re glad to see again.</p>
+        </div>
+
+        <div class="bg-img bg-img-one bg-red" style="background-image: url('{{ asset1.getUrl(imgQuality) }}">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="style-6 sec-1 p-5">
+    <div class="d-sm-flex justify-content-around flex-wrap">
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <div><p>Fast Response Rates</p></div>
+          <div class="px-2"><img src="uploads/siteImages/comment-m.svg" alt="Decorative Icon"></div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <div><p>High Availability </p></div>
+          <div class="px-2"><img src="uploads/siteImages/calendar.svg" alt="Decorative Icon"></div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between py-2">
+          <div><p>Transparent Pricing</p></div>
+          <div class="px-2"><img src="uploads/siteImages/money.svg" alt="Decorative Icon"></div>
+        </div>
+    </div>
+</div>
+
+<section class="bkgd-900">
+  <div class="container-fluid style-4 dark" >
+    <div class="wrapper">
+      <div class="d-flex flex-column">
+        <div class="">
+          <p class="pre-header">Residential</p>
+          <h2>Electrical work that keeps your house humming</h2>
+        </div> 
+      </div>
+      <div class="divider-detail">
+        <svg width="2000" height="25" viewBox="0 0 2000 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1367.45 25C1374.36 25 1379.96 19.4036 1379.96 12.5C1379.96 5.59644 1374.36 0 1367.45 0C1360.54 0 1354.93 5.59644 1354.93 12.5C1354.93 19.4036 1360.54 25 1367.45 25Z" fill="#464F53"/>
+          <path d="M1354.93 0.116211V24.8837" stroke="#464F53" stroke-miterlimit="10"/>
+          <path d="M1355 4H0" stroke="#464F53" stroke-miterlimit="10"/>
+          <path d="M1355 21H0" stroke="#464F53" stroke-miterlimit="10"/>
+          <path d="M2000 12H1379" stroke="#464F53" stroke-miterlimit="10"/>
+          </svg>
+      </div>
+      <div class="d-lg-flex">
+        <div class="left-size no-image">
+          <!-- empty -->
+        </div>
+        <div class="right-size">
+          <p class="intro-text">
+            Friendly, fast and always there when you need us. Whether you are remodelling your home, need a new piece of equipment installed, or just need an electrician in a hurry, we’re here to answer the call.  
+          </p>
+          <div class="btn">
+            <a href="/residential">
+              <svg class='btn-icon' width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.395 1.91535L25.8714 12L11.395 22.0846V1.91535Z" stroke="#F98080" stroke-width="2"/>
+                <path d="M25.3054 12H36.3054" stroke="#F98080" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M0 12H11" stroke="#F98080" stroke-width="2" stroke-miterlimit="10"/>
+              </svg>
+              <p>Learn more</p>
+              <div class="btn-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.4142 12.0001L14 20.4144L12.5858 19.0002L18.5858 13.0001H2V11.0001H18.5858L12.5858 5.00015L14 3.58594L22.4142 12.0001Z" fill="white"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" style-7 pod-wrapper">
+    <div>
+      <div>
+        <div class="d-flex  flex-wrap  pods pod-8">
+            {% for post in pageRes %}
+            <a  href='{{ post.url }}' class="d-flex flex-column justify-content-left pod">
+              <p class="pre-header">{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</p>
+              <div class="">
+                <img src="{{ post.pageIcon[0].getUrl() }}" alt="{{post.title}} decorative icon">
+              </div>
+              <h4>{{post.title}}</h4>
+            </a>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bkgd-800">
+  <div class="container-fluid style-4 dark" >
+    <div class="wrapper">
+      <div class="d-flex flex-column">
+        <div class="">
+          <p class="pre-header">light COMMERCIAL</p>
+          <h2>Electrical work that keeps your business running </h2>
+        </div> 
+      </div>
+
+      <div class="divider-detail">
+        <svg x="0px" y="0px" viewBox="0 0 2000 24">
+          <path class="st0" d="M1367.4,0h-20v24h20c6.6,0,12-5.4,12-12C1379.4,5.4,1374.1,0,1367.4,0z" fill="#464F53"/>
+          <path class="st1" d="M1348,5.3H0" stroke="#464F53" stroke-miterlimit="10"/>
+          <path class="st1" d="M1348,19H0" stroke="#464F53" stroke-miterlimit="10"/>
+          <path class="st1" d="M2000,12h-621" stroke="#464F53" stroke-miterlimit="10"/>
+        </svg>
+      </div>
+  
+
+      <div class="d-lg-flex">
+        <div class="left-size no-image">
+          <!-- empty -->
+        </div>
+        <div class="right-size">
+          <p class="intro-text">
+            Friendly, fast and always there when you need us. Whether you are remodelling your home, need a new piece of equipment installed, or just need an electrician in a hurry, we’re here to answer the call.
+          </p>
+          <div class="btn">
+            <a href="/commercial">
+              <svg class='btn-icon' width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.395 1.91535L25.8714 12L11.395 22.0846V1.91535Z" stroke="#F98080" stroke-width="2"/>
+                <path d="M25.3054 12H36.3054" stroke="#F98080" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M0 12H11" stroke="#F98080" stroke-width="2" stroke-miterlimit="10"/>
+              </svg>
+              <p>Learn more</p>
+              <div class="btn-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.4142 12.0001L14 20.4144L12.5858 19.0002L18.5858 13.0001H2V11.0001H18.5858L12.5858 5.00015L14 3.58594L22.4142 12.0001Z" fill="white"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" style-7 pod-wrapper">
+    <div class="">
+      <div class=" ">
+        <div class="d-flex  flex-wrap  pods pod-4">
+          {% for post in pageComm %}
+          <a  href='{{ post.url }}' class="d-flex flex-column justify-content-left pod">
+            <p class="pre-header">{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</p>
+            <div class="">
+              <img src="{{ post.pageIcon[0].getUrl() }}" alt="{{post.title}} decorative icon">
+            </div>
+            <h4>{{post.title}}</h4>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container-fluid style-4 testimonial" >
+  <div class="wrapper">
+    <div class="d-flex flex-column">
+      <div class="">
+        <p class="pre-header">Lighting and Wiring</p>
+        <h2>Residential electrical work</h2>
+      </div> 
+    </div>
+  
+    <div class="d-lg-flex testimonial-wrapper">
+      <div class="left-size">
+        <div class="img-wrapper">
+          <div><img src="/uploads/siteImages/quote.svg" alt="Decorative icon quote marks"></div>
+        </div>
+      </div>
+      <div class="right-size">
+        {% for entry in entries %}
+          <div class="testimonial-text">
+          {{ entry.quote }}
+          </div>
+          <div class="test-author">
+            <div class="img-auth">
+              <img src="{{ entry.profilePic[0].getUrl('customerProfilePic') }}" alt="Customer profile image">
+            </div>
+            <div class="text-auth">
+              <p><span> {{entry.title }}</span></p>
+              <p>{{entry.customerLocation}}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</div> 
+
+  <div class="style-5 contact">
+    <div class="">
+      <div class="d-lg-flex">
+        <div class="dark half left bg-red">
+          <div class="max-800">
+
+            <div>
+              <p class="pre-header">WE’RE ALL EARS</p>
+              <h2>Contact Us </h2>
+            </div>
+  
+            <div class="divider-detail"> 
+              {% include '_partials/svg/sm-cap-red.svg' %}
+            </div>
+  
+            <div>
+              <p class="intro-text">
+                We serve residents and business from Wellington to Ōtaki and everywhere in between. Call us to talk through your project or email our team for a quote. We’ll get back to you as soon as we can.
+              </p>
+
+              <div class="details-wrapper">
+                <div class="d-sm-flex flex-wrap">
+
+                  <div class="contact-detail">
+                    <div class="">
+                      <img src="/uploads/siteImages/flag.svg" alt="Decorative icon - flag">
+                    </div>
+                    <div><p>{{contactDetails.companyAddress}}</p></div>
+                  </div>
+
+                  <div class="contact-detail">  
+                    <div class="">
+                     <img src="/uploads/siteImages/email.svg" alt="Decorative iocn - email">
+                    </div>
+                    <div><p>Email us at </br> <a href="mailto:{{contactDetails.email}}">{{contactDetails.email}}</a> </p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="half right bg-grey d-flex justify-content-between flex-column">
+          <div class="bg-img" style="background-image: url('{{ asset2.getUrl(imgQuality) }}">
+          </div>
+          <div class="max-800">
+            <div>
+              <p class="pre-header">WE’RE ALL EARS</p>
+              <h3>Contact Us </h3>
+            </div>
+            <p>  We serve residents and business from Wellington to Ōtaki and everywhere in between. Call us to talk through your project or email our team for a quote. We’ll get back to you as soon as we can.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+{% endblock %}

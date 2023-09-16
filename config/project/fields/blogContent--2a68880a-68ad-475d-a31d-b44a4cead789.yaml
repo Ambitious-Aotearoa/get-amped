@@ -1,0 +1,23 @@
+columnSuffix: zdonpirv
+contentColumnType: text
+fieldGroup: b3f7bc1f-9046-40ec-9b7d-b8aa4e0ece45 # Blog
+handle: blogContent
+instructions: null
+name: 'Blog Content'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: cb2638c7-1bcf-4d16-ac97-5243e739f82e # Heading Style
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

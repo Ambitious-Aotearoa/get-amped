@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Get Amped Electrical'
+primary: true
+siteGroup: b451c696-8da3-42f5-bb8d-cdaa4de9f806 # Get Amped Electrical
+sortOrder: 1
