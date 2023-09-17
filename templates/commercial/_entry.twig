@@ -1,18 +1,14 @@
 {% extends "_layout.twig" %}
-{% set featureImage = entry.heroImage.one() %}
+
 {# Commercial content entries#}
 {% set entries = craft.entries().section('commercial') %}
 
 
 {% block content %}
-{% for entry in entries %}
-    <div class="container-fluid style-3" >
-        <div class="wrapper">
-            {% include '_partials/res-comm/inner-nav-page.twig' %}
-        </div>
-    </div>
-{% endfor %}
+<div class="service-inner">
+{% include '_partials/res-comm/inner-nav-page.twig' %}
 {% include '_partials/res-comm/alternating-blocks.twig' %}
 {% include "_partials/upsSection.twig" %}
-
+</div>
 {% endblock %}
+

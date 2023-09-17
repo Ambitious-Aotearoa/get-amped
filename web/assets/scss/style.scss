@@ -182,9 +182,9 @@ p.pre-header{
   }
 
   .bg-img.bg-height{
-    height:380px;
+    min-height:380px;
     @media (min-width:992px){
-      height:500px
+     min-height:500px
     }
   }
 
@@ -218,6 +218,7 @@ p.pre-header{
     }
   }
 
+  //about and blog pages
   .single-svg{
     width: 100%;
     overflow: hidden;
@@ -282,7 +283,7 @@ nav{
 }
 
 
-//*************style 2 and 4 sections*********************
+//************* SHARED STYLES *********************
 // consisten sizing for left and right panels
 .style-2, .style-4{
   @media (min-width:992px){
@@ -296,77 +297,21 @@ nav{
     }
   }
 }
-//see style 3 padding top and bottom for consistency across site
-.hero-header{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  @media (min-width:992px){
-    padding-top: 120px;
-    padding-bottom: 60px;
 
-  }
-}
-
-.small-image-wrapper{
-  padding-bottom: 60px;
-  @media (min-width:992px){
-    padding-bottom: 120px;
-    .bg-img{
-      min-height:300px;
-      max-height: 300px;
-      max-width: 300px;
-    }
-  }
-}
 //*************style 3 sections*********************
 // Residential and Commercial Inner pages - hero style
 .style-3{
-  padding-bottom: 40px;
-  padding-top: 40px;
-  h1{
-    padding-bottom:55px
-  }
-  .intro-text{
-    color:$white;
-  }
-
   .right-size{
-    padding:0 30px 48px 30px;
+    padding:0 30px 40px 30px;
   }
-
-  .bg-img{
-    display: flex;
-    align-items: flex-end;
-    min-height: 300px;
-  }
-
-
-  .divider-detail{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-
-
   @media (min-width:992px){
     padding-bottom: 120px;
-    padding-top: 120px;
-    .bg-img{
-      min-height: 500px;
-    }
-    .intro-text{
-      min-height: 190px;
-      display: flex;
-      align-items: flex-end;
-    }
     .right-size{
       padding-bottom: 60px;
       padding-right: 50px;
       padding-left:300px;
     }
   }
-
 }
 
 //*************style 4 *********************
@@ -389,7 +334,6 @@ nav{
     }
   }
 }
-
 
 //*************style 5 sections*********************
 //style 5 used for homepage and alternating sections on Residential and Commercial Pages
@@ -502,10 +446,6 @@ nav{
   }
 }
 
-
-
-
-
 //*************style  *********************
 .style-6{
   .border-btm{
@@ -548,8 +488,7 @@ nav{
   }
 }
 
-
-
+//homepage
 // style 4 testimonial styles - homepage
 .testimonial{
   padding-top:60px;
@@ -680,6 +619,7 @@ nav{
   }
 }
 
+//homepage, services pages
 .pod-wrapper{
   padding: 20px;
   padding-bottom: 60px;
@@ -791,11 +731,6 @@ nav{
 
 }
 
-
-
-
-
-
 //contact section - contact page and contact box homepage
 .contact {
   .bg-img{
@@ -827,6 +762,257 @@ nav{
     }
   }
 }
+
+// interal pages
+.hero-header{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width:992px){
+    padding-top: 120px;
+    padding-bottom: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+  }
+}
+//about us and blog pages (style 4)
+.small-image-wrapper{
+  padding-bottom: 60px;
+  @media (min-width:992px){
+    padding-bottom: 120px;
+    .bg-img{
+      min-height:300px;
+      max-height: 300px;
+      max-width: 300px;
+    }
+  }
+}
+
+
+
+
+
+
+//************* PAGE SPECIFIC STYLES *********************
+
+.homepage{
+  .style-5.sec-1{
+    padding: 40px 20px 0;
+  }
+  .bkgd-900 {
+    @include bg-img(url("/uploads/siteImages/bg-home-side.svg"), 0% 80%, contain);
+  }
+  
+  .bkgd-800 .pod-wrapper{
+    @include bg-img(url("/uploads/siteImages/bg-home-btm.svg"), 100% 100%, contain);
+  }
+  .divider-detail{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    @media (min-width:992px){
+      margin-bottom: 60px;
+    }
+  }
+
+}
+
+.services{
+  background-color: $black800;
+  @include bg-img(url("/uploads/siteImages/bg-btm-left.svg"), 0% 120%, contain);
+  
+
+
+  .style-2{
+    padding-top:40px;
+    padding-bottom:40px;
+    h3{
+      margin-bottom: 40px;
+    }
+    .intro-text{
+      color:$light-grey;
+    }
+    @media (min-width:992px){
+      h3{
+        margin-bottom: 0px;
+      }
+  
+      .intro-text{
+        padding-left: 40px;
+      }
+  
+    }
+    @media (min-width:992px){
+      padding-top:100px; 
+      padding-bottom:100px;
+    }
+    @media (min-width:1200px){
+      .intro-text{
+        padding-left: 100px;
+      }
+    }
+  }
+}
+
+//residential, commercial (and entries) - About page.
+// image and svg section outside of wrapper
+.wrapper-svg{
+  position:relative;
+  .residential-svg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bg-img.bg-height {
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+
+  @media (min-width:992px){
+    padding-left: 80px;
+    padding-right:80px;
+    .bg-img.bg-height {
+      width: 100%;
+    }
+  }
+}
+
+.service-inner{
+  .wrapper-svg{
+    .absolute-svg{
+      position: absolute;
+      right: 0;
+      svg{
+        width: 1000px;
+      }
+
+      
+      @media (min-width:992px){
+        left: 0;
+        right: unset;
+        svg{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .bg-img.bg-height{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .right-size{
+    margin-top: 20px;
+    .intro-text{
+      min-height: 190px;
+      display: flex;
+      align-items: flex-end;
+      padding-top: 60px;
+    }
+  }
+  .style-5.sec-2{
+    .alternate:nth-of-type(2){
+      .d-lg-flex{
+        flex-direction: row-reverse
+      }
+      .half{
+        .max-800{
+          margin-right: auto;
+          margin-left: 0;
+        }
+      }
+    }
+    .bg-img{
+      min-height: 300px;
+      background-position: 50% 0%;
+    }
+    .half{
+      margin: 0;
+  
+    }
+  }
+}
+
+//section used on residential and commerical INTERNAL apges for alternating positions
+
+
+// ******about
+.about{
+.small-image-wrapper{
+  .intro-text{
+    color:$grey700;
+  }
+}
+  .style-5.sec-1{
+    padding: 0px 20px 0;
+  }
+  .style-5{
+    padding: 0px 20px 0;
+    margin-bottom: 40px;
+    .half{
+      margin: 0;
+    }
+    @media (min-width:992px){
+      margin-bottom: 100px;
+    }
+  }
+}
+
+// ******contact
+.contact-page{
+  .contact-detail{
+    display: flex;
+    align-items: flex-start;
+    img{
+      padding:5px 10px 10px 0
+    }
+    margin-bottom: 20px;
+  }
+
+  @media (min-width:768px){
+    .contact-detail{
+      flex-direction: column;
+      align-items: start;
+      // &:first-of-type{
+      //   padding-right: 0px;
+      // }
+      padding-right:20px;
+      &:last-of-type{
+        padding-right: 0px;
+      }
+    }
+  }
+}
+
+
+
+// ******blog internal pages
+.blog-content{
+  background-color: $black800;
+  @include bg-img(url("/uploads/siteImages/bg-btm-left.svg"), 0% 120%, contain);
+  .small-image-wrapper{
+    padding-bottom: 0;
+    .intro-text{
+      color:$white;
+      padding-left: 100px;
+    }
+    .bg-img{
+     min-height: 400px;
+      max-width: 460px;
+      margin-bottom: -40px;
+    }
+  }
+}
+
+.blog-wrapper{
+  display: flex;
+}
+
 
 //footer - all pages
 .footer{
@@ -963,182 +1149,3 @@ nav{
     }
   }
 }
-
-
-
-
-
-
-
-// *****************pages
-
-.homepage{
-  .style-5.sec-1{
-    padding: 40px 20px 0;
-  }
-  .bkgd-900 {
-    @include bg-img(url("/uploads/siteImages/bg-home-side.svg"), 0% 80%, contain);
-  }
-  
-  .bkgd-800 .pod-wrapper{
-    @include bg-img(url("/uploads/siteImages/bg-home-btm.svg"), 100% 100%, contain);
-  }
-  .divider-detail{
-    margin-top: 10px;
-    margin-bottom: 40px;
-    @media (min-width:992px){
-      margin-bottom: 60px;
-    }
-  }
-
-}
-
-.commercial,
-.residential{
-  background-color: $black800;
-  @include bg-img(url("/uploads/siteImages/bg-btm-left.svg"), 0% 120%, contain);
-  
-  .wrapper-svg{
-    position:relative;
-    .residential-svg{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      svg{
-        width: 100%;
-        height: 100%;
-      }
-    }
-    .bg-img.bg-height {
-      height: 380px;
-      width: calc(100% - 40px);
-      margin: 0 auto;
-      
-      @media (min-width:768px){
-        width: calc(100% - 80px);
-      }
-      @media (min-width:1200px){
-        height: 500px;
-        width: calc(100% - 160px);
-        
-      }
-    }
-  }
-
-  .style-2{
-    padding-top:40px;
-    padding-bottom:40px;
-    h3{
-      margin-bottom: 40px;
-    }
-    .intro-text{
-      color:$light-grey;
-    }
-    @media (min-width:992px){
-      h3{
-        margin-bottom: 0px;
-      }
-  
-      .intro-text{
-        padding-left: 40px;
-      }
-  
-    }
-    @media (min-width:992px){
-      padding-top:100px; 
-      padding-bottom:100px;
-    }
-    @media (min-width:1200px){
-      .intro-text{
-        padding-left: 100px;
-      }
-    }
-  }
-}
-
-//section used on residential and commerical INTERNAL apges for alternating positions
-.style-5.sec-2{
-  .alternate:nth-of-type(2){
-    .d-lg-flex{
-      flex-direction: row-reverse
-    }
-  }
-  .bg-img{
-    min-height: 300px;
-    background-position: 50% 0%;
-  }
-  .half{
-    margin: 0;
-  }
-}
-
-// ******about
-.about{
-.small-image-wrapper{
-  .intro-text{
-    color:$grey700;
-  }
-}
-  .style-5.sec-1{
-    padding: 0px 20px 0;
-  }
-  .style-5{
-    padding: 0px 20px 0;
-    margin-bottom: 40px;
-    .half{
-      margin: 0;
-    }
-    @media (min-width:992px){
-      margin-bottom: 100px;
-    }
-  }
-}
-
-// ******contact
-.contact-page{
-  .contact-detail{
-    display: flex;
-    align-items: flex-start;
-    img{
-      padding:5px 10px 10px 0
-    }
-    margin-bottom: 20px;
-  }
-
-  @media (min-width:768px){
-    .contact-detail{
-      flex-direction: column;
-      align-items: start;
-      // &:first-of-type{
-      //   padding-right: 0px;
-      // }
-      padding-right:20px;
-      &:last-of-type{
-        padding-right: 0px;
-      }
-    }
-  }
-}
-// ******blog internal pages
-.blog-content{
-  background-color: $black800;
-  @include bg-img(url("/uploads/siteImages/bg-btm-left.svg"), 0% 120%, contain);
-  .small-image-wrapper{
-    padding-bottom: 0;
-    .intro-text{
-      color:$white;
-      padding-left: 100px;
-    }
-    .bg-img{
-     min-height: 400px;
-      max-width: 460px;
-      margin-bottom: -40px;
-    }
-  }
-}
-
-.blog-wrapper{
-  display: flex;
-}
-
-

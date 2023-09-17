@@ -17,11 +17,9 @@ function resizeTextBox(){
 
     // residential and commercial pages hero image svg image
     if (style3TextWidth < 400) {
-      $(".style-3 .right-size ").css("padding-top", (style3Text/2 + 40) + "px");
-      $(".style-3 .divider-detail svg").css("margin-top", (style3Text/2 - 40) + "px");
+      $(".style-3 .absolute-wrapper").css("padding-top", (style3Text/2) + "px");
     } else {
-      $(".style-3 .right-size ").css("padding-top", style3Text + 120 + "px");
-      $(".style-3 .divider-detail svg").css("margin-top", style3Text + 60 + "px");
+      $(".style-3 .absolute-wrapper ").css("padding-top", style3Text + 40 + "px");
     }
 
 }
