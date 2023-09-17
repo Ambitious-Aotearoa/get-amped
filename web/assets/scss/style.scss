@@ -1119,7 +1119,7 @@ nav{
     }
   }
 }
-
+// ******blog internal pages
 .blog-content{
   background-color: $black800;
   @include bg-img(url("/uploads/siteImages/bg-btm-left.svg"), 0% 120%, contain);
@@ -1140,3 +1140,5 @@ nav{
 .blog-wrapper{
   display: flex;
 }
+
+
