@@ -11,80 +11,87 @@
 {% set authorProfileImage = entry.authorProfile.one() %}
 
 {% block content %}
-<div class="blog-content dark">
-   <div class="container-fluid hero-header" >
-      <div class="wrapper">
-         <div class="d-flex flex-column">
-            <div class="">
-               {% if currentEntry.title %}
-               <h1 class="">{{ currentEntry.title }}</h1>
-               {% endif %}  
-               <div class="right-size">
-                  <div class="test-author">
-                     <div class="img-auth">
-                        {% if authorProfileImage %}
-                            <img src="{{ authorProfileImage.getUrl() }}" alt="Customer profile image">
-                        {% endif %} 
-                     </div>
-                     <div class="text-auth">
-                        {% if currentEntry.authorName %}
-                        <p><span> {{ currentEntry.authorName }}</span></p>
-                        {% endif %}  
-                        {% if currentEntry.publishDate %}
-                        <p>{{ currentEntry.publishDate|date('d-m-Y') }}</p>
-                        {% endif %}  
+<div class="media-entries">
+   <div class="media-content dark">
+      <div class="container-fluid hero-header" >
+         <div class="wrapper">
+            <div class="d-flex flex-column">
+               <div class="">
+                  {% if currentEntry.title %}
+                  <h1 class="">{{ currentEntry.title }}</h1>
+                  {% endif %}  
+                  <div class="right-size">
+                     <div class="media-author">
+                        <div class="img-auth">
+                           {% if authorProfileImage %}
+                              <img src="{{ authorProfileImage.getUrl('customerProfilePic') }}" alt="Customer profile image">
+                           {% endif %} 
+                        </div>
+                        <div class="text-auth">
+                           {% if currentEntry.authorName %}
+                           <p class='dark'><span> {{ currentEntry.authorName }}</span></p>
+                           {% endif %}  
+                           {% if currentEntry.publishDate %}
+                           <p>{{ currentEntry.publishDate|date('d-m-Y') }}</p>
+                           {% endif %}  
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-   </div>
 
-   <div class="single-svg">
-      {% include '_partials/svg/lg-round-grey.svg' %}
-   </div>
+      <div class="single-svg">
+         {% include '_partials/svg/lg-round-grey.svg' %}
+      </div>
 
-   <div class="container-fluid style-4 small-image-wrapper" >
-      <div class="wrapper">
-         <div class="d-lg-flex small-image">
-            <div class="left-size">
-               {% if featureImage %}
-               <div class="bg-img" style="background-image: url('{{ featureImage.getUrl() }}')">
-               </div>
-               {% endif %}
-            </div>
-            <div class="right-size">
-               <p class="intro-text ">
-                  {% if currentEntry.blogIntro %}
-                  {{ currentEntry.blogIntro }}
+      <div class="container-fluid style-4 small-image-wrapper" >
+         <div class="wrapper">
+            <div class="d-lg-flex small-image">
+               <div class="left-size">
+                  {% if featureImage %}
+                  <div class="bg-img" style="background-image: url('{{ featureImage.getUrl() }}')">
+                  </div>
                   {% endif %}
-               </p>
+               </div>
+               <div class="right-size">
+                  <p class="intro-text ">
+                     {% if currentEntry.blogIntro %}
+                     {{ currentEntry.blogIntro }}
+                     {% endif %}
+                  </p>
+               </div>
             </div>
          </div>
       </div>
    </div>
-</div>
 
-<div class="blog-wrapper">
-   <div class="blog-nav">
-      <p class="pre-header">Read Next</p>
-      <ul>
-         {% for otherEntry in entries %}
-            <li>
-                <a href="{{ otherEntry.url }}">{{ otherEntry.title }}</a>
-            {% if otherEntry.publishDate %}
-                <p>{{ otherEntry.publishDate|date('d-m-Y') }}</p>
-            {% endif %}  
-            </li>
-         {% endfor %}
-      </ul>
-   </div>
+   <div class="container-fluid style-4" >
+      <div class="wrapper media-wrapper">
+         <div class="d-flex">
+            <div class="media-nav left-size">
+               <p class="pre-header">Read Next</p>
+               <ul>
+                  {% for otherEntry in entries %}
+                     <li>
+                        <a href="{{ otherEntry.url }}">{{ otherEntry.title }}</a>
+                     {% if otherEntry.publishDate %}
+                        <p>{{ otherEntry.publishDate|date('d-m-Y') }}</p>
+                     {% endif %}  
+                     </li>
+                  {% endfor %}
+               </ul>
+            </div>
 
-   <div class="blog-body">
-      {% if currentEntry.blogContent %}
-         {{ currentEntry.blogContent }}
-      {% endif %}
+            <div class="media-body right-size">
+               {% if currentEntry.blogContent %}
+                  {{ currentEntry.blogContent }}
+               {% endif %}
+            </div> 
+         
+         </div>
+      </div>
    </div>
 </div>
 
