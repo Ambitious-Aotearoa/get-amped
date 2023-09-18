@@ -987,25 +987,28 @@ nav{
 
 // ******blog internal pages and careers
 .media-entries{
+  //top half - dark background
   .media-content{
     background-color: $black800;
     @include bg-img(url("/uploads/siteImages/bg-btm-left.svg"), 0% 120%, contain);
-    position: relative;
+    // position: relative;
     .small-image-wrapper{
       padding-bottom: 0;
+
       .intro-text{
         color:$white;
         padding-top: 40px;
         padding-bottom:40px;
       }
+
       .left-size {
       z-index: 3;
       position: relative;
         img{
           max-width: 300px;
-  
         }
       }
+
       .social-links{
         height: 100px;
         align-items: flex-end;
@@ -1040,82 +1043,121 @@ nav{
         }
       }
     }
-    .body-content{
-      padding-top:40px;
-      .media-wrapper{
-        .d-flex{
-          flex-direction: column-reverse;
-        }
-        @media(min-width:992px){
-          .d-flex{
-          flex-direction: row;
-          }
-        }
+  }
 
-        @media(min-width:1200px){
-          padding-top:70px;
-        }
 
-      }
-      .media-nav{
-        ul {
-          margin-top: 40px;
-          list-style: none;
-          padding-left: 0;
-          li{
-            padding-bottom: 36px;
-            border-bottom:1px solid  #D1D5DB;
-            margin-bottom: 36px;
-            a{
-              font-size:30px;
-              font-weight:500;
-            }
-            p{
-              margin-top: 10px;
-            }
-          }
-        }
-      }
-      .media-body{
-        p{
-          margin-bottom: 50px;
-        }
-        @media(min-width:992px){
-          &.right-size{
-            padding-left: 100px;
-          }
-        }
-      }
-    }
+  // .body-content{
+  //   padding-top:40px;
+  //   .media-wrapper{
+  //     .d-flex{
+  //       flex-direction: column-reverse;
+  //     }
+  //     // @media(min-width:992px){
+  //     //   .d-flex{
+  //     //   flex-direction: row;
+  //     //   }
+  //     // }
 
+  //     // @media(min-width:1200px){
+  //     //   padding-top:70px;
+  //     // }
+
+  //   }
+  // }
+
+ //bottom half - white
+  // .media-nav{
+  //   ul {
+  //     margin-top: 40px;
+  //     list-style: none;
+  //     padding-left: 0;
+  //     li{
+  //       padding-bottom: 36px;
+  //       border-bottom:1px solid  #D1D5DB;
+  //       margin-bottom: 36px;
+  //       a{
+  //         font-size:30px;
+  //         font-weight:500;
+  //       }
+  //       p{
+  //         margin-top: 10px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // .media-body.right-size{
+  //   @media(min-width:992px){
+  //     padding-left: 100px;
+  //   }
+  // }
+//end media queries
 }
 
-.media-entries.blog-entries{
-  .media-content{
-    &::after{
-      content:'';
-      width: 100%;
-      height: 100px;
-      background-color:$white;
-      left:0;
-      bottom: -1px ;
-      position: absolute;
-      z-index: 1;
-    }
-  }
-  }
-}
 
+
+//page specific
+// .blog-entires{
+//   position: relatives;
+//   .media-content::after{
+//       content:'';
+//       width: 100%;
+//       height: 100px;
+//       background-color:$white;
+//       left:0;
+//       bottom: -1px ;
+//       position: absolute;
+//       z-index: 1;
+//     }
+//   // .media-body.right-size{
+//   //   p{
+//   //     margin-bottom: 50px;
+//   //   }
+//   // }
+// }
+  
 
 .media-entries.careers{
+
+  //.media-content::after{
+  //   @media (min-width:1200px){
+  //     content:'';
+  //     width: 100%;
+  //     height: 100px;
+  //     background-color:$white;
+  //     left:0;
+  //     bottom: -1px ;
+  //     position: absolute;
+  //     z-index: 1;
+  //   }
+  // }
+
   .small-image-wrapper{
+    .bg-img{
+      height: 300px;
+      max-width: 300px;
+    }
+
     @media (min-width:992px){
       .bg-img{
         height: 100%;
         max-width: 480px;
       }
+      .intro-text{
+        padding-bottom: 180px;
+      }
+    }
+    margin-bottom: 60px;
+  }
+  .media-body.right-size{
+    p{
+      margin-bottom: 10px;
+    }
+    ul{
+      margin-bottom: 40px;
     }
   }
+
 }
 
 

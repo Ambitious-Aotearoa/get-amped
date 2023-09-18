@@ -1,4 +1,4 @@
-dateModified: 1694993913
+dateModified: 1694998263
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: 'Get Amped Electrical'
@@ -37,6 +37,7 @@ meta:
     4b550893-38e4-46d7-ab57-550e9d8ca350: Quote # Quote
     4dfe1365-3e16-4576-b624-26977c15aba9: Icon # Icon
     5ad14467-ae6e-43a2-9412-7e6d43312181: Image # Image
+    5f28be65-6ad9-4b5b-aac8-c4e15edd914f: Default # Default
     5fa1d125-79ef-4656-afd3-f949f55040e0: 'Profile Pic' # Profile Pic
     6ff06d29-690e-4add-9601-f64717497280: Contact # Contact
     7d84bf35-37f7-4879-8aab-d210e0f06bbe: 'Page Content Group' # Page Content Group
@@ -51,8 +52,8 @@ meta:
     89f09898-1cd9-4336-9b13-626331b54e96: Pages # Pages
     91ad0fb4-9e0d-45f2-a1c4-ff7eb33522bc: 'Blog Hero' # Blog Hero
     94d3c156-1ec0-4418-9e6d-9aa11592f3db: 'Phone Number' # Phone Number
+    94e27f61-f8e0-4347-9213-c569aa46821b: Careers # Careers
     96afbf09-9968-48cd-a3ac-28c945804de1: 'Page Icon' # Page Icon
-    213bffe7-7405-45b6-92b1-447f2c6fe859: 'Job Title' # Job Title
     424b0abc-4d19-4971-b97e-d17954332d92: Testimonial # Testimonial
     523aafbc-31c5-41b2-9f62-b969b0b8f7d9: 'Hero Title' # Hero Title
     587b4720-1e96-4fbc-8afd-50ea3320e482: 'Button Link' # Button Link
@@ -80,7 +81,7 @@ meta:
     b8388f6b-0dd6-4b7e-b5e5-d34493fb1bdd: Home # Home
     c9b4968f-ad0f-4253-ab09-36fae6b07175: images # images
     c887d157-58ec-4a89-9fcf-1072a9a8dcf1: 'Site Images' # Site Images
-    c804936a-0498-4a5c-b0f5-2b2c8ddc1c55: careers # careers
+    c804936a-0498-4a5c-b0f5-2b2c8ddc1c55: Careers # Careers
     cb2638c7-1bcf-4d16-ac97-5243e739f82e: 'Heading Style' # Heading Style
     cc4a2356-9788-41da-8d0a-55ff89433d89: Test # Test
     d0183e8e-86a9-478a-a777-5f1b6864a2b9: 'Hero Image' # Hero Image

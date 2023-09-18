@@ -7,11 +7,11 @@
     .all()
 %}
 
-{% set featureImage = currentEntry.Image.one() %}
+{% set featureImage = currentEntry.mediaImage.one() %}
 {% set authorProfileImage = entry.authorProfile.one() %}
 
 {% block content %}
-<div class="media-entries blog-entires">
+
    <div class="media-content dark">
       <div class="container-fluid hero-header" >
          <div class="wrapper">
@@ -42,9 +42,9 @@
          </div>
       </div>
 
-      <div class="single-svg">
+      {# <div class="single-svg">
          {% include '_partials/svg/lg-round-grey.svg' %}
-      </div>
+      </div> #}
 
       <div class="container-fluid style-4 small-image-wrapper" >
          <div class="wrapper">
@@ -70,7 +70,7 @@
       </div>
    </div>
 
-   <div class="container-fluid style-4 body-content" >
+   {# <div class="container-fluid style-4 body-content" >
       <div class="wrapper media-wrapper">
          <div class="d-flex">
             <div class="media-nav left-size">
@@ -95,7 +95,7 @@
          
          </div>
       </div>
-   </div>
-</div>
+   </div> #}
+
 
 {% endblock %}

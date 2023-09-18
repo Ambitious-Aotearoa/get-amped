@@ -1,9 +1,6 @@
 {% extends "_layout.twig" %}
 
-{% set entries = craft.entries()
-    .section('careers')
-    .all()
-%}
+{% set posts = craft.entries().section('careers').all() %}
 
 
 {% block content %}
@@ -26,7 +23,7 @@
          <div class="wrapper">
             <div class="d-lg-flex">
                <div class="left-size">
-                  <div class="bg-img" style="background-image: url('uploads/images/placeholder-2.jpg')">
+                  <div class="bg-img" style="background-image: url('/uploads/images/placeholder-2.jpg')">
             </div>
                </div>
 
@@ -41,25 +38,45 @@
 
    </div>
 
-   <div class="container-fluid style-4 body-content" >
+
+   {# <div class="container-fluid style-4 body-content" >
       <div class="wrapper media-wrapper">
+            {% for post in posts %}
+      <div>
          <div class="d-flex">
             <div class="media-nav left-size">
-               <p class="pre-header">Position</p>
+               {% if post.title %}
+                  <p class="pre-header">{{post.title}}</p>
+               {% endif %}
                <ul>
 
                </ul>
             </div>
 
             <div class="media-body right-size">
-               {# {% if currentEntry.mediaContent %}
-                  {{ currentEntry.mediaContent }}
-               {% endif %} #}
+               {% if post.jobDescription %}
+                  {{post.jobDescription}}
+               {% endif %}
+
+               <div class="btn dark">
+                  {% if post.buttonLink %}
+                     <a href="{{ post.buttonLink }}">
+                        {% include '_partials/svg/btn-icon-left.svg' %}
+                        <p>{{ post.buttonText }}</p>
+                        {% include '_partials/svg/btn-icon-arrow.svg' %}
+                     </a>
+                  {% endif %}
+               </div>
             </div> 
          
          </div>
       </div>
-   </div>
+
+      {% endfor %}
+      </div>
+   </div> #}
 </div>
+
+
 
 {% endblock %}
