@@ -1,9 +1,9 @@
 columnSuffix: qvcafwbu
 contentColumnType: text
-fieldGroup: b3f7bc1f-9046-40ec-9b7d-b8aa4e0ece45 # Blog
-handle: blogIntro
+fieldGroup: b3f7bc1f-9046-40ec-9b7d-b8aa4e0ece45 # Media
+handle: mediaIntro
 instructions: null
-name: 'Blog Intro'
+name: 'Media Intro'
 searchable: false
 settings:
   byteLimit: null

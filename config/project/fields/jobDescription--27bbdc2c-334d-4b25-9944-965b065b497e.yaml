@@ -1,0 +1,23 @@
+columnSuffix: lwxxhukb
+contentColumnType: text
+fieldGroup: c804936a-0498-4a5c-b0f5-2b2c8ddc1c55 # careers
+handle: jobDescription
+instructions: null
+name: 'Job Description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 0ed8a863-d20a-464f-b4a1-82149da87395 # careers
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

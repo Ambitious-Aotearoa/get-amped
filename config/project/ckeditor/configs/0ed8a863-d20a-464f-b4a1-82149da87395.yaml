@@ -1,0 +1,24 @@
+headingLevels:
+  - 3
+listPlugin: List
+name: careers
+options:
+  alignment:
+    options:
+      - left
+      - right
+toolbar:
+  - heading
+  - alignment
+  - underline
+  - '|'
+  - bold
+  - italic
+  - link
+  - bulletedList
+  - numberedList
+  - todoList
+  - outdent
+  - indent
+  - pageBreak
+  - selectAll

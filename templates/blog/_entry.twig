@@ -7,11 +7,11 @@
     .all()
 %}
 
-{% set featureImage = currentEntry.blogImage.one() %}
+{% set featureImage = currentEntry.Image.one() %}
 {% set authorProfileImage = entry.authorProfile.one() %}
 
 {% block content %}
-<div class="media-entries">
+<div class="media-entries blog-entires">
    <div class="media-content dark">
       <div class="container-fluid hero-header" >
          <div class="wrapper">
@@ -50,24 +50,27 @@
          <div class="wrapper">
             <div class="d-lg-flex small-image">
                <div class="left-size">
-                  {% if featureImage %}
-                  <div class="bg-img" style="background-image: url('{{ featureImage.getUrl() }}')">
-                  </div>
-                  {% endif %}
+                   <img src="{{ featureImage.getUrl('blogHero') }}" alt="Customer profile image">
                </div>
+
                <div class="right-size">
                   <p class="intro-text ">
-                     {% if currentEntry.blogIntro %}
-                     {{ currentEntry.blogIntro }}
+                     {% if currentEntry.mediaIntro %}
+                     {{ currentEntry.mediaIntro }}
                      {% endif %}
                   </p>
+                  <div class="social-links">
+                     <a href=""><img src="/uploads/siteImages/facebook.svg"></a>
+                     <a href=""><img src="/uploads/siteImages/facebook.svg"></a>
+                     <a href=""><img src="/uploads/siteImages/facebook.svg"></a>
+                  </div>
                </div>
             </div>
          </div>
       </div>
    </div>
 
-   <div class="container-fluid style-4" >
+   <div class="container-fluid style-4 body-content" >
       <div class="wrapper media-wrapper">
          <div class="d-flex">
             <div class="media-nav left-size">
@@ -85,8 +88,8 @@
             </div>
 
             <div class="media-body right-size">
-               {% if currentEntry.blogContent %}
-                  {{ currentEntry.blogContent }}
+               {% if currentEntry.mediaContent %}
+                  {{ currentEntry.mediaContent }}
                {% endif %}
             </div> 
          
