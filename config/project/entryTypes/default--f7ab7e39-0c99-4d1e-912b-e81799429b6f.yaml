@@ -1,0 +1,70 @@
+fieldLayouts:
+  0e3aaaa0-4496-4af8-9e3d-17c244b242b4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: 'Staff name'
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9d7d5243-4a95-444e-92e4-5fc0537914d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a0a95219-2a55-475d-927f-ffdc56a2c61c # Staff Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 577be3ef-f76a-4b4c-b35e-0eb7167b4037
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f927e273-ac5d-43c1-b306-9c695f373857 # Staff Position
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 30717659-e25f-459a-b279-99747874c792
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3c5cb5c0-0f76-476d-a4ac-6594635b4d35
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 1c8d0fee-0726-451c-84e6-66b0a8fd55cc # Staff
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

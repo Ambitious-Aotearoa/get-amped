@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: staff
+name: Staff
+propagationMethod: all
+siteSettings:
+  066dea4a-eb24-4ccd-adb4-07aace1d6c2b: # Get Amped Electrical
+    enabledByDefault: true
+    hasUrls: true
+    template: staff/_entry
+    uriFormat: 'staff/{slug}'
+structure:
+  maxLevels: null
+  uid: cdacfea3-7553-4c19-877b-e3ee62431070
+type: structure

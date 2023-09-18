@@ -1,0 +1,19 @@
+columnSuffix: modhxlei
+contentColumnType: text
+fieldGroup: 3fda8fa1-9d3b-442b-90f3-25d2a5bf37a3 # Staff
+handle: staffPosition
+instructions: null
+name: 'Staff Position'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
