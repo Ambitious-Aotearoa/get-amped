@@ -3,6 +3,7 @@
     "cloudgrayau/pitch": "^2.3",
     "craftcms/ckeditor": "3.5.1",
     "craftcms/cms": "^4.4.0",
+    "craftcms/contact-form": "3.0.1",
     "verbb/image-resizer": "3.0.7",
     "vlucas/phpdotenv": "^5.4.0"
   },
