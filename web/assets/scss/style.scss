@@ -1002,11 +1002,8 @@ nav{
       }
 
       .left-size {
-      z-index: 3;
-      position: relative;
-        img{
-          max-width: 300px;
-        }
+        z-index: 3;
+        position: relative;
       }
 
       .social-links{
@@ -1025,9 +1022,8 @@ nav{
         padding-top: 0;
         padding-bottom: 60px;
         }
-        .left-size img{
-          max-width: 360px;
-        }
+
+
         .right-size{
           display: flex;
           flex-direction: column;
@@ -1037,102 +1033,62 @@ nav{
           padding-left: 100px;
         }
       }
-      @media (min-width:1200px){
-        .left-size img{
-          max-width: 480px;
-        }
-      }
+
     }
   }
 
-
-  // .body-content{
-  //   padding-top:40px;
-  //   .media-wrapper{
-  //     .d-flex{
-  //       flex-direction: column-reverse;
-  //     }
-  //     // @media(min-width:992px){
-  //     //   .d-flex{
-  //     //   flex-direction: row;
-  //     //   }
-  //     // }
-
-  //     // @media(min-width:1200px){
-  //     //   padding-top:70px;
-  //     // }
-
-  //   }
-  // }
-
  //bottom half - white
-  // .media-nav{
-  //   ul {
-  //     margin-top: 40px;
-  //     list-style: none;
-  //     padding-left: 0;
-  //     li{
-  //       padding-bottom: 36px;
-  //       border-bottom:1px solid  #D1D5DB;
-  //       margin-bottom: 36px;
-  //       a{
-  //         font-size:30px;
-  //         font-weight:500;
-  //       }
-  //       p{
-  //         margin-top: 10px;
-  //       }
-  //     }
-  //   }
-  // }
+  .body-content{
+    padding-top:40px;
+    .wrapper{
+      .media-nav{
+        ul {
+          margin-top: 40px;
+          list-style: none;
+          padding-left: 0;
+          li{
+            padding-bottom: 36px;
+            border-bottom:1px solid  #D1D5DB;
+            margin-bottom: 36px;
+            a{
+              font-size:30px;
+              font-weight:500;
+            }
+            p{
+              margin-top: 10px;
+            }
+          }
+        }
+      }
 
-  // .media-body.right-size{
-  //   @media(min-width:992px){
-  //     padding-left: 100px;
-  //   }
-  // }
+      @media(min-width:992px){
+        .d-flex{
+        flex-direction: row;
+        }
+        .media-body{
+            padding-left: 100px;
+        }
+      }
+
+      @media(min-width:1200px){
+        padding-top:70px;
+      }
+
+    }
+  }
 //end media queries
 }
 
 
 
 //page specific
-// .blog-entires{
-//   position: relatives;
-//   .media-content::after{
-//       content:'';
-//       width: 100%;
-//       height: 100px;
-//       background-color:$white;
-//       left:0;
-//       bottom: -1px ;
-//       position: absolute;
-//       z-index: 1;
-//     }
-//   // .media-body.right-size{
-//   //   p{
-//   //     margin-bottom: 50px;
-//   //   }
-//   // }
-// }
-  
-
 .media-entries.careers{
-
-  //.media-content::after{
-  //   @media (min-width:1200px){
-  //     content:'';
-  //     width: 100%;
-  //     height: 100px;
-  //     background-color:$white;
-  //     left:0;
-  //     bottom: -1px ;
-  //     position: absolute;
-  //     z-index: 1;
-  //   }
-  // }
+  .d-flex{
+    flex-direction: column;
+  }
 
   .small-image-wrapper{
+    margin-bottom: 60px;
     .bg-img{
       height: 300px;
       max-width: 300px;
@@ -1147,21 +1103,73 @@ nav{
         padding-bottom: 180px;
       }
     }
-    margin-bottom: 60px;
+
+    &::after{
+      @media (min-width:992px){
+        content:'';
+        width: 100%;
+        height: 100px;
+        background-color:$white;
+        left:0;
+        bottom: -2px ;
+        position: absolute;
+        z-index: 1;
+      }
+    }
   }
-  .media-body.right-size{
-    p{
-      margin-bottom: 10px;
+
+  .body-content{
+    .pre-header{
+      border-bottom:1px solid $red;
+    }
+    .media-body p:not(.btn p){
+      margin-bottom:10px;
+    }
+    p a{
+      color:$red;
     }
     ul{
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
-
 }
 
+.media-entries.blog-entries{
+  .d-flex{
+    flex-direction: column-reverse;
+  }
+  .small-image-wrapper{
+      .left-size img{
+        max-width: 360px;
+        height: 360px;
+      }
 
+    @media (min-width:1200px){
+      .left-size img{
+        max-width: 480px;
+      }
+    }
 
+    &::after{
+      content:'';
+      width: 100%;
+      height: 100px;
+      background-color:$white;
+      left:0;
+      bottom: -1px ;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  .body-content{
+    p{
+      margin-bottom:50px;
+    }
+    padding-bottom: 0;
+  }
+}
+
+  
 
 
 //footer - all pages
