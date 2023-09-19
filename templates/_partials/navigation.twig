@@ -3,7 +3,7 @@
 {% set commercial = craft.entries().section('commercial').all() %}
 {% set blog = craft.entries().section('blog').all() %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="{{ siteUrl }}"><img src="{{ contactDetails.companyLogo[0].getUrl() }}" alt="{{contactDetails.imageAltText}}"></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,77 +11,72 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-
-       <li class="nav-item">
-        <a class="nav-link" href="/residential">Residential</a>
-      </li>
+    <ul class="navbar-nav mr-auto ml-auto">
+    
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/residential" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Residential
-        </a>
+        <div class="d-flex">
+          <a class="nav-link" href="/residential">Residential</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+        </div>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        {% for post in residential  %}
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endfor %}
+          <ul>
+            {% for post in residential  %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
       </li>
 
-       <li class="nav-item">
-        <a class="nav-link" href="/commercial">Commercial</a>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/commercial" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Commercial
-        </a>
+      <li class="nav-item dropdown ">
+        <div class="d-flex">
+          <a class="nav-link" href="/commercial">Commercial</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+        </div>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        {% for post in commercial  %}
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endfor %}
+          <ul>
+            {% for post in commercial %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
       </li> 
-       <li class="nav-item">
+
+      <li class="nav-item">
         <a class="nav-link" href="/about">About Us</a>
       </li>
 
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/blog" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Blog
-        </a>
+        <div class="d-flex">
+          <a class="nav-link" href="/blog">Blog</a>
+          <a class="nav-link dropdown-toggle" href="/blog" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+        </div>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        {% for post in blog  %}
-            <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endfor %}
+          <ul>
+            {% for post in blog  %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
       </li> 
-              <li class="nav-item">
-        <a class="nav-link" href="/blog">Blog</a>
-      </li>
-              <li class="nav-item">
+
+      <li class="nav-item">
         <a class="nav-link" href="/careers">Careers</a>
       </li>
     </ul>
 
-
-
-
     <div class="my-2 my-lg-0 btn dark">
-              <a href="/contact">
-            <svg class='btn-icon' width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11.395 1.91535L25.8714 12L11.395 22.0846V1.91535Z" stroke="#F98080" stroke-width="2"/>
-                <path d="M25.3054 12H36.3054" stroke="#F98080" stroke-width="2" stroke-miterlimit="10"/>
-                <path d="M0 12H11" stroke="#F98080" stroke-width="2" stroke-miterlimit="10"/>
-            </svg>
-            <p>Contact Us</p>
-            <div class="btn-arrow">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.4142 12.0001L14 20.4144L12.5858 19.0002L18.5858 13.0001H2V11.0001H18.5858L12.5858 5.00015L14 3.58594L22.4142 12.0001Z" fill="white"/>
-                </svg>
-            </div>
-        </a>
+      <a href="/contact">
+        {% include '_partials/svg/btn-icon-left.svg' %}
+          <p>Contact Us</p>
+        {% include '_partials/svg/btn-icon-arrow.svg' %}
+      </a>
     </div>
   </div>
 </nav>
-
 

@@ -274,11 +274,53 @@ div[class^="col"]{
 }
 
 
+.navbar-light .navbar-nav .nav-link {
+  color:$dark
+  }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color:$red
+    }
 
+    // .navbar .nav-item:not(:last-child) {
+//   margin-right: 35px;
+// }
+
+// .dropdown-toggle::after {
+//    transition: transform 0.15s linear; 
+// }
+
+// // .show.dropdown .dropdown-toggle::after {
+// //   transform: translate(180deg);
+// // }
+
+// .dropdown-menu {
+//   margin-top: 0;
+// }
 //*************navigation*********************
 nav{
+  width: 100%;
   .btn a .btn-arrow{
     padding: 13px;
+  }
+  .navbar-light .navbar-nav .nav-link{
+    color:$dark
+  }
+  ul{
+    list-style: none;
+    padding-left: 20px;
+    li a:hover {
+      color:$red
+    }
+  }
+
+
+  .dropdown-menu.show{
+    ul li:hover a{
+      color:$red
+    }
+    @media(min-width:992px){
+      width: 50vw;
+    }
   }
 }
 
@@ -1415,4 +1457,5 @@ nav{
     }
   }
 }
+
 
