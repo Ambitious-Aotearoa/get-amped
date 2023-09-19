@@ -1,0 +1,91 @@
+{% macro errorList(errors) %}
+    {% if errors %}
+        {{ ul(errors, {class: 'errors'}) }}
+    {% endif %}
+{% endmacro %}
+
+{% set submission = submission ?? null %}
+
+
+{% block content %}
+<style>
+input#honeypooh { display: none; }
+
+</style>
+<form method="post" action="" accept-charset="UTF-8">
+    {{ csrfInput() }}
+    {{ actionInput('contact-form/send') }}
+    {{ redirectInput('contact/thanks?from={fromEmail}') }}
+
+    <div class="form-layout">
+        <p><label for="first-name">First Name</label></p>
+        {{ input('text', 'firstName', submission.firstName ?? '', {
+            id: 'first-name',
+            autocomplete: 'First Name',
+            placeholder:'First Name'
+        }) }}
+        {{ submission ? _self.errorList(submission.getErrors('firstName')) }}
+
+        <p><label for="last-name">Last Name</label></p>
+        {{ input('text', 'LastName', submission.LastName ?? '', {
+            id: 'last-name',
+            autocomplete: 'Last Name',
+            placeholder:'Last Name'
+        }) }}
+        {{ submission ? _self.errorList(submission.getErrors('LastName')) }}
+    </div>
+     <div class="form-layout">
+        <p><label for="from-phone">Phone Number</label></p>
+            {{ input('tel', 'fromPhone', submission.fromPhone ?? '', {
+                id: 'from-phone',
+                autocomplete:'Phone Number',
+                placeholder:'Phone Number'
+            }) }}
+            {{ submission ? _self.errorList(submission.getErrors('fromPhone')) }}
+
+            <p><label for="from-email">Email Address*</label></p>
+            {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+                id: 'from-email',
+                autocomplete: 'email',
+                required: true,
+                placeholder:'Email Address'
+            }) }}
+            {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
+    </div>
+
+     <div class="form-layout">
+        <p><label for="message">Message*</label></p>
+        {{ tag('textarea', {
+            text: submission.message.body ?? '',
+            id: 'message',
+            name: 'message',
+            rows: 5,
+            cols: 40,
+            required: true,
+            placeholder:'Message'
+        }) }}
+    </div>
+
+    <input id="honeypooh" name="honeypooh" type="text">
+    {{ submission ? _self.errorList(submission.getErrors('message')) }}
+
+    <button type="submit" class="btn dark">
+    <a>
+    {% include '_partials/svg/btn-icon-left.svg' %}
+    
+   <p> Submit</p>
+     {% include '_partials/svg/btn-icon-arrow.svg' %}
+     </a>
+    </button>
+          {# <div class="btn dark">
+            <a type="submit">
+                  {% include '_partials/svg/btn-icon-left.svg' %}
+              <p>Submit</p>
+              <div class="btn-arrow">
+                   {% include '_partials/svg/btn-icon-arrow.svg' %}
+              </div>
+            </a>
+          </div> #}
+
+</form>
+{% endblock %}

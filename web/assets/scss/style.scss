@@ -738,7 +738,8 @@ nav{
   }
 
   .details-wrapper{
-    padding: 40px 0;
+
+    padding: 40px 0 0;
     img{
       padding:10px 10px 10px 0
     }
@@ -752,6 +753,20 @@ nav{
     }
   }
 
+
+  .bg-red .max-800{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-between;
+    height: 100%;
+    .spread{
+      display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+  }
+
   @media (min-width:768px){
     .contact-detail{
       flex-direction: column;
@@ -761,6 +776,51 @@ nav{
       }
     }
   }
+}
+
+
+.form-wrapper{
+
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  @media (min-width:992px){
+    padding: 80px 20px;
+    max-width: 500px;
+  }
+
+  form{
+    width: 100%;
+    input,textarea{
+      width: 100%;
+    }
+    input{
+      padding:25px 0;
+    }
+    input,
+    textarea{
+      border:none;
+      border-bottom: 1px solid $light-grey;
+      background-color: transparent;
+    }
+    textarea:focus,
+    input[type="text"]:focus,
+    input:focus-visible{
+      outline-width: 0;
+      border-bottom: 1px solid $red;
+    }
+    .form-layout{
+      display: flex;
+      margin-bottom: 30px;
+      input:first-of-type{
+        margin-right: 30px;
+      }
+    }
+    p label{
+      display: none;
+    }
+  }
+
 }
 
 // interal pages
@@ -824,7 +884,7 @@ nav{
     @include bg-img(url("/uploads/siteImages/bg-home-btm.svg"), 100% 100%, contain);
   }
   .divider-detail{
-    margin-top: 10px;
+    margin-top: 87px;
     margin-bottom: 40px;
     @media (min-width:992px){
       margin-bottom: 60px;
@@ -1003,6 +1063,10 @@ nav{
 
 // ******contact
 .contact-page{
+
+  .divider-detail{
+    margin-top: 67px;
+  }
   .contact-detail{
     display: flex;
     align-items: flex-start;
@@ -1351,3 +1415,4 @@ nav{
     }
   }
 }
+

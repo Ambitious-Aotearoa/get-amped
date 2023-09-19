@@ -1,4 +1,4 @@
-dateModified: 1695071355
+dateModified: 1695080420
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: 'Get Amped Electrical'
@@ -114,6 +114,19 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Get Amped Electrical'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: jennifer@ambitious.co.nz
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: honeypooh
   image-resizer:
     edition: standard
     enabled: true

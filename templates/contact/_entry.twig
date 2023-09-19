@@ -18,13 +18,14 @@
             <div>
               <p class="pre-header">WE’RE ALL EARS</p>
               <h1>Contact Us </h1>
-            </div>
-  
-             <div class="divider-detail"> 
+              <div class="divider-detail"> 
               {% include '_partials/svg/sm-cap-red.svg' %}
             </div>
+            </div>
   
-            <div>
+
+  
+            <div class="spread">
               <p class="intro-text">
                 We serve residents and business from Wellington to Ōtaki and everywhere in between. Call us to talk through your project or email our team for a quote. We’ll get back to you as soon as we can.
               </p>
@@ -67,12 +68,12 @@
         <div class="half right bg-grey d-flex justify-content-between flex-column">
           <div class="bg-img" style="background-image: url('{{ asset1.getUrl(imgQuality) }}">
           </div>
-          <div class="max-800">
+          <div class="form-wrapper">
             <div>
               <p class="pre-header">WE’RE ALL EARS</p>
               <h3>Contact Us </h3>
             </div>
-            <p>  We serve residents and business from Wellington to Ōtaki and everywhere in between. Call us to talk through your project or email our team for a quote. We’ll get back to you as soon as we can.</p>
+              {% include '_partials/contactForm.twig' %}
           </div>
         </div>
       </div>

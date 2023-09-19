@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0d822154e0532b9f894441de36c6d51c",
+    "content-hash": "aaf0963c82240fc0bdf72c4913314b6c",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -576,11 +576,11 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "3.5.1",
+            "version": "3.6.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/909223ecc7fc0cd3aa54a28435dc1fb99e5c7a41",
-                "reference": "909223ecc7fc0cd3aa54a28435dc1fb99e5c7a41",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/69a76a6ec028a4ca93962f47e23bc3f3bb15417e",
+                "reference": "69a76a6ec028a4ca93962f47e23bc3f3bb15417e",
                 "shasum": ""
             },
             "require": {
@@ -601,7 +601,7 @@
                 }
             },
             "license": [
-                "MIT"
+                "GPL-3.0-or-later"
             ],
             "authors": [
                 {
@@ -624,7 +624,7 @@
                 "docs": "https://github.com/craftcms/ckeditor/blob/master/README.md",
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom"
             },
-            "time": "2023-08-29T21:02:48+00:00"
+            "time": "2023-09-13T15:54:45+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -776,16 +776,65 @@
             "time": "2023-03-16T21:54:21+00:00"
         },
         {
-            "name": "craftcms/html-field",
-            "version": "2.0.7",
+            "name": "craftcms/contact-form-honeypot",
+            "version": "2.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/html-field/zipball/7ecccab102b4e86abb5526411e96594f430f2bb5",
-                "reference": "7ecccab102b4e86abb5526411e96594f430f2bb5",
+                "url": "https://api.github.com/repos/craftcms/contact-form-honeypot/zipball/aeeb3dffaa868c26a918a73cf115e878872a149d",
+                "reference": "aeeb3dffaa868c26a918a73cf115e878872a149d",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^4.0.0-alpha.1",
+                "craftcms/cms": "^4.0.0-RC3"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Contact Form Honeypot",
+                "handle": "contact-form-honeypot",
+                "documentationUrl": "https://github.com/craftcms/contact-form-honeypot/blob/main/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\contactform\\honeypot\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Add a honeypot captcha to your Craft CMS contact form",
+            "keywords": [
+                "cms",
+                "contact",
+                "craftcms",
+                "form",
+                "honeypot",
+                "yii2"
+            ],
+            "support": {
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/contact-form-honeypot/issues?state=open",
+                "source": "https://github.com/craftcms/contact-form-honeypot",
+                "docs": "https://github.com/craftcms/contact-form-honeypot/blob/main/README.md",
+                "rss": "https://github.com/craftcms/contact-form-honeypot/commits/main.atom"
+            },
+            "time": "2022-05-03T23:41:59+00:00"
+        },
+        {
+            "name": "craftcms/html-field",
+            "version": "2.0.8",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/html-field/zipball/4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
+                "reference": "4797c9cb0397e6d69d25d9716a75f7b47c69fd3a",
+                "shasum": ""
+            },
+            "require": {
                 "php": "^8.0.2"
             },
             "type": "library",
@@ -811,7 +860,7 @@
                 "docs": "https://github.com/craftcms/html-field/blob/main/README.md",
                 "rss": "https://github.com/craftcms/html-field/commits/main.atom"
             },
-            "time": "2023-04-21T16:52:18+00:00"
+            "time": "2023-09-17T11:24:51+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -5862,5 +5911,5 @@
     "platform-overrides": {
         "php": "8.0.2"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
