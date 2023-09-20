@@ -1474,13 +1474,10 @@ nav{
       }
     }
 
-    @media (min-width:1200px){
-      .left-size img{
-        // max-width: 460px;
-      }
-    }
+
   }
   .body-content{
+    margin-top:40px;
     p{
       margin-bottom:50px;
     }
@@ -1526,6 +1523,7 @@ nav{
     background-color: $red;
     flex-direction: row;
     width:100% !important;
+    overflow:hidden;
     &:hover{
       background-color: $red-contrast;
     }
