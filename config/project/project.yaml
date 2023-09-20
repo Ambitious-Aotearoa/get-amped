@@ -1,4 +1,4 @@
-dateModified: 1695080420
+dateModified: 1695173013
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: 'Get Amped Electrical'
@@ -102,6 +102,7 @@ meta:
     f7ab7e39-0c99-4d1e-912b-e81799429b6f: Default # Default
     f508bf38-b99b-43d4-b1de-57e0434a7056: 'Publish date' # Publish date
     f927e273-ac5d-43c1-b306-9c695f373857: 'Staff Position' # Staff Position
+    fc624c9f-1d69-4ac8-9589-6abc8cead3f0: 'Blog Intro' # Blog Intro
     fda1e4ba-87a0-4b92-a3d5-00bec5715df4: Residential # Residential
     fe457efa-6058-4738-a1e0-518c3c53a03a: About # About
     fe980643-d3a8-4b2f-86a8-3027e9afb617: Home # Home

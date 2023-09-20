@@ -32,6 +32,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: fc624c9f-1d69-4ac8-9589-6abc8cead3f0 # Blog Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a8346fc-35e0-46d3-8ded-58d3bc39c802
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 939a82ed-ad48-4e83-b71a-0f3012f6369f # Author name
             instructions: null
             label: null

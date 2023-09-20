@@ -136,6 +136,7 @@ p.pre-header{
   display: flex;
   padding: 0;
   margin-top: 40px;
+  span,
   a{
 
     line-height: .7em;
@@ -159,6 +160,7 @@ p.pre-header{
     }
   }
   &.dark{
+    span,
     a{
       background-color:$black;
     }
@@ -329,45 +331,46 @@ nav{
       width: 200px
     }
   }
-}
-.navbar .nav-item:not(:last-child) {
-  margin-right: 10px;
-  @media (min-width:1200px){
-    margin-right: 35px;
+
+  &.navbar .nav-item:not(:last-child) {
+    margin-right: 10px;
+    @media (min-width:1200px){
+      margin-right: 35px;
+    }
+    @media (min-width:1600px){
+      margin-right: 55px;
+    }
   }
-  @media (min-width:1600px){
-    margin-right: 55px;
+  
+  .dropdown-toggle:empty::after{
+    color:$red;
+    content: "∟";
+    border: 0;
+    padding: 0;
+    transform: rotate(-45deg);
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size: 20px;
+    font-weight: bolder;
+    @media (min-width:992px){
+      margin-left: -10px;
+    }
+  }
+  a#navbarDropdown{
+    height: 0;
+  }
+  .dropdown-menu{
+    top:80%
+  }
+  
+  &.navbar-light .navbar-nav .nav-link {
+  color:$dark
+  }
+  &.navbar-light .navbar-nav .nav-link:hover {
+  color:$red
   }
 }
 
-.dropdown-toggle:empty::after{
-  color:$red;
-  content: "∟";
-  border: 0;
-  padding: 0;
-  transform: rotate(-45deg);
-  margin-left: 5px;
-  margin-top: 4px;
-  font-size: 20px;
-  font-weight: bolder;
-  @media (min-width:992px){
-    margin-left: -10px;
-  }
-}
-a#navbarDropdown{
-  height: 0;
-}
-.dropdown-menu{
-  top:80%
-}
-
-
-.navbar-light .navbar-nav .nav-link {
-color:$dark
-}
-.navbar-light .navbar-nav .nav-link:hover {
-color:$red
-}
 //************* SHARED STYLES *********************
 // consisten sizing for left and right panels
 .style-2, .style-4{
@@ -1486,7 +1489,32 @@ color:$red
   }
 }
 
-  
+.blog{
+  background-color: $black800;
+  @include bg-img(url("/uploads/siteImages/bg-btm-left.svg"), 0% 120%, contain);
+  .pods{
+    .pod{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (min-width: 992px){
+        width: 50%;
+        h4{
+          padding-top: 40px;
+          margin-top: 0;
+        }
+      }
+      @media (min-width: 1200px){
+        .pre-header {
+            margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+
+
+}
 
 
 //footer - all pages

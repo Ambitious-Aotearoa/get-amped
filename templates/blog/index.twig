@@ -1,1 +1,86 @@
 {% extends "_layout.twig" %}
+{% set blog = craft.entries().section('blog').orderBy('postDate desc').all() %}
+
+{% set mostRecentPost = blog[0] %}
+{% set blog = blog|slice(1, blog|length) %}
+
+
+{% block content %}
+<div class="blog">
+    <div class="container-fluid hero-header dark" >
+        <div class="wrapper">
+            <div class="d-flex flex-column">
+            <div class="">
+            <p class="pre-header">Blogs</p>
+                <h1 class="">The latest electrical news, information and tips from Get Amped Electrical</h1>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dark">
+        <div class="d-flex  flex-wrap  pods pod-2">
+            <a href='{{ mostRecentPost.url }}' class="pod">
+                    <div>
+                    {% if mostRecentPost.publishDate %}
+                        <p class="pre-header">{{ mostRecentPost.publishDate|date('d-m-Y') }}</p>
+                    {% endif %} 
+
+                    <h4>{{mostRecentPost.title}}</h4>
+
+                    {% if mostRecentPost.blogIntro %}
+                        <p>{{ mostRecentPost.blogIntro}}</p>
+                    {% endif %} 
+                    </div>
+                    <div class="btn dark">
+                        <span>
+                            {% include '_partials/svg/btn-icon-left.svg' %}
+                            <p>Read more</p>
+                            {% include '_partials/svg/btn-icon-arrow.svg' %}
+                        </span>
+                    </div> 
+
+            </a>
+            <a>
+
+           
+
+                {% if mostRecentPost.mediaImage|length %}
+                    {# Assuming "mediaImage" is an asset field associated with the blog post. #}
+                    {% set featureImage = mostRecentPost.mediaImage[0] %}
+                    <img src="{{ featureImage.url }}" alt="Feature Image">
+                {% endif %}
+            </a>
+        </div>
+    </div> 
+
+    <div class=" style-7 pod-wrapper">
+        <div class="d-flex  flex-wrap  pods pod-2">
+            {% for post in blog %}
+                <a href='{{ post.url }}' class="pod">
+                        <div>
+                        {% if post.publishDate %}
+                            <p class="pre-header">{{ post.publishDate|date('d-m-Y') }}</p>
+                        {% endif %} 
+
+                        <h4>{{post.title}}</h4>
+
+                        {% if post.blogIntro %}
+                            <p>{{ post.blogIntro}}</p>
+                        {% endif %} 
+                        </div>
+                        <div class="btn dark">
+                            <span>
+                                {% include '_partials/svg/btn-icon-left.svg' %}
+                                <p>Read more</p>
+                                {% include '_partials/svg/btn-icon-arrow.svg' %}
+                            </span>
+                        </div> 
+
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
