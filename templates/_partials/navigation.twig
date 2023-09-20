@@ -48,23 +48,9 @@
       <li class="nav-item">
         <a class="nav-link" href="/about">About Us</a>
       </li>
-
-      <li class="nav-item dropdown">
-        <div class="d-flex">
-          <a class="nav-link" href="/blog">Blog</a>
-          <a class="nav-link dropdown-toggle" href="/blog" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-        </div>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <ul>
-            {% for post in blog  %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </li> 
-
+      <li class="nav-item">
+        <a class="nav-link" href="/blog">Blog</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="/careers">Careers</a>
       </li>

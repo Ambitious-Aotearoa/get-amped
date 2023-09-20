@@ -29,16 +29,15 @@
                     </div>
                     <div id="" class="right-text mg-top-lg">
                         <p>{{contentBlock.text}}</p>
-
-                        <div class="btn dark">
-                            {% if blockType == 'pageContent' and contentBlock.buttonLink|length %}
+                        {% if blockType == 'pageContent' and contentBlock.buttonLink|length %}
+                            <div class="btn dark">
                             <a href="{{ contentBlock.buttonLink[0].getUrl() }}">
                                 {% include '_partials/svg/btn-icon-left.svg' %}
                                 <p>{{contentBlock.buttonText}}</p>
                                     {% include '_partials/svg/btn-icon-arrow.svg' %}
                             </a>
+                            </div>
                         {% endif %}
-                        </div>
                     </div>
                 </div>
             </div>
