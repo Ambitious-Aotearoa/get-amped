@@ -8,4 +8,4 @@ name: 'Blog Hero'
 position: center-center
 quality: 30
 upscale: true
-width: 480
+width: null

@@ -4,6 +4,7 @@
 {% set imgQuality = {
   quality: 60,
 } %}
+
 {% set currentEntry = entry %}
 {% set entries = craft.entries()
     .section('blog')
@@ -56,7 +57,9 @@
          <div class="wrapper">
             <div class="d-lg-flex small-image">
                <div class="left-size">
-                   {# <img src="{{ featureImage.getUrl('imgQuality') }}" alt="Customer profile image"> #}
+               {% if featureImage %}
+                   <img src="{{ featureImage.getUrl('blogHero') }}" alt="Customer profile image">
+               {% endif %}
                </div>
 
                <div class="right-size">

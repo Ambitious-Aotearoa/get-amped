@@ -18,15 +18,16 @@
         </div>
     </div>
 
-    <div class="dark">
-        <div class="d-flex  flex-wrap  pods pod-2">
+    <div class="style-7 pod-wrapper dark">
+        <div class="d-flex  flex-wrap  pods pod-1">
             <a href='{{ mostRecentPost.url }}' class="pod">
+                <div>
                     <div>
                     {% if mostRecentPost.publishDate %}
                         <p class="pre-header">{{ mostRecentPost.publishDate|date('d-m-Y') }}</p>
                     {% endif %} 
 
-                    <h4>{{mostRecentPost.title}}</h4>
+                    <h3>{{mostRecentPost.title}}</h3>
 
                     {% if mostRecentPost.blogIntro %}
                         <p>{{ mostRecentPost.blogIntro}}</p>
@@ -39,17 +40,18 @@
                             {% include '_partials/svg/btn-icon-arrow.svg' %}
                         </span>
                     </div> 
+                </div>
 
-            </a>
-            <a>
 
-           
-
-                {% if mostRecentPost.mediaImage|length %}
-                    {# Assuming "mediaImage" is an asset field associated with the blog post. #}
-                    {% set featureImage = mostRecentPost.mediaImage[0] %}
-                    <img src="{{ featureImage.url }}" alt="Feature Image">
-                {% endif %}
+                <div>
+                <img src="uploads/siteImages/top-line-svg.svg" class="bg-detail">
+                    {% if mostRecentPost.mediaImage|length %}
+                        {# Assuming "mediaImage" is an asset field associated with the blog post. #}
+                        {% set featureImage = mostRecentPost.mediaImage[0] %}
+                        <img src="{{ featureImage.url }}" alt="Feature Image">
+                    {% endif %}
+                     <img src="uploads/siteImages/bottom-line-svg.svg" class="bg-detail bottom">
+                </div>
             </a>
         </div>
     </div> 

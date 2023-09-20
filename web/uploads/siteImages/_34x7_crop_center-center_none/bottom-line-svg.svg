@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" width="34px" height="7px" viewBox="0 0 300 62" fill="none">
+  <g clip-path="url(#clip0_932_7190)">
+    <path d="M299.676 2L0.0001297 1.99997" stroke="white" stroke-width="2" stroke-miterlimit="10"></path>
+    <path d="M149.838 295.611L149.838 1.66221" stroke="white" stroke-width="2" stroke-miterlimit="10"></path>
+  </g>
+  <defs>
+    <clipPath id="clip0_932_7190">
+      <rect width="300" height="62" fill="white"></rect>
+    </clipPath>
+  </defs>
+</svg>
