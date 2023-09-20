@@ -14,7 +14,7 @@ body {
   max-width: 2000px;
   min-width: 320px;
   overflow-x: hidden; 
-   text-wrap: balance;
+
 }
 
 ::-webkit-scrollbar {
@@ -1092,36 +1092,38 @@ nav{
   }
 
 
-  .style-5.sec-2{
-    .alternate:nth-of-type(2){
-      .d-lg-flex{
-        flex-direction: row-reverse
-      }
-      .half{
-        .max-800{
-          margin-right: auto;
-          // margin-left: 0;
-        }
-      }
-      @media (min-width:992px){
-        .half{
-          .max-800{
-            margin-left: 0;
-          }
-        }
-      }
-    }
-    .bg-img{
-      min-height: 300px;
-      background-position: 50% 0%;
-    }
-    .half{
-      margin: 0;
-  
-    }
-  }
+
 }
 
+.style-5.sec-2{
+
+ .alternate:nth-of-type(2n){
+    .d-lg-flex{
+      flex-direction: row-reverse
+    }
+    .half{
+      .max-800{
+        margin-right: auto;
+        // margin-left: 0;
+      }
+    }
+    @media (min-width:992px){
+      .half{
+        .max-800{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .bg-img{
+    min-height: 300px;
+    background-position: 50% 0%;
+  }
+  .half{
+    margin: 0;
+
+  }
+}
 //section used on residential and commerical INTERNAL apges for alternating positions
 
 

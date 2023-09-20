@@ -12,8 +12,8 @@
 
 
 {# Pod content -from these pages #}
-{% set pageRes = craft.entries().section('residential').all() %}
-{% set pageComm = craft.entries().section('commercial').all() %}
+{% set pageRes = craft.entries().section('residential').orderBy('postDate asc').all() %}
+{% set pageComm = craft.entries().section('commercial').orderBy('postDate asc').all() %}
 
 
 {# testimonials #}
@@ -173,6 +173,9 @@
       </div>
     </div>
   </div>
+
+
+
   <div class=" style-7 pod-wrapper">
     <div class="">
       <div class=" ">
@@ -180,9 +183,11 @@
           {% for post in pageComm %}
           <a  href='{{ post.url }}' class="d-flex flex-column justify-content-left pod">
             <p class="pre-header">{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</p>
+          {% if post.pageIcon|length %}
             <div class="">
               <img src="{{ post.pageIcon[0].getUrl() }}" alt="{{post.title}} decorative icon">
             </div>
+            {% endif %}
             <h4>{{post.title}}</h4>
           </a>
           {% endfor %}

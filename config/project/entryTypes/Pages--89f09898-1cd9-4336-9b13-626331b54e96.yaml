@@ -35,7 +35,7 @@ fieldLayouts:
             fieldUid: 96afbf09-9968-48cd-a3ac-28c945804de1 # Page Icon
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 9d3defe8-bd67-455d-a0a5-ba72779f6dfc
@@ -59,7 +59,7 @@ fieldLayouts:
             fieldUid: d0183e8e-86a9-478a-a777-5f1b6864a2b9 # Hero Image
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 5328a98d-0c5f-46bd-960e-60d6d2673411
@@ -83,7 +83,7 @@ fieldLayouts:
             fieldUid: 7d84bf35-37f7-4879-8aab-d210e0f06bbe # Page Content Group
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 03cd6ba2-e224-4e75-b779-e9424f2496e3

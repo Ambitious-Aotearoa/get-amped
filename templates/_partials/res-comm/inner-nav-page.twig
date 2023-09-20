@@ -2,7 +2,7 @@
   quality: 60,
 } %}
 {% set featureImage = entry.heroImage.one() %}
-{% for entry in entries %}
+
 
 
     <div class="container-fluid hero-header" >
@@ -18,26 +18,30 @@
         </div>
     </div>
 
-        <div class="style-3">
-            <div class="wrapper-svg">
-        <div class="bg-img bg-height" style="background-image: url('{{ featureImage.getUrl(imgQuality) }}');">
-            <div class="absolute-wrapper">
-            <div class="single-svg">
-            {% include '_partials/svg/lg-cap-grey.svg' %}
-            </div>
-            </div>
-            <div class="right-size dark">
-                <p class="intro-text ">
-                {% if entry.heroText %}
-                    {{entry.heroText}}
-                {% endif %}  
-                </p>
-            </div>
-        </div>
+
+    <div class="style-3">
+        <div class="wrapper-svg">
+            {% if entry.heroImage|length %}
+                {% set featureImage = entry.heroImage.one() %}
+                <div class="bg-img bg-height" style="background-image: url('{{ featureImage.getUrl(imgQuality) }}');">
+                    <div class="absolute-wrapper">
+                        <div class="single-svg">
+                            {% include '_partials/svg/lg-cap-grey.svg' %}
+                        </div>
+                    </div>
+                    <div class="right-size dark">
+                        <p class="intro-text">
+                            {% if entry.heroText %}
+                                {{ entry.heroText }}
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+            {% endif %}
         </div>
     </div>
+</div>
 
 
 
 
-{% endfor %}

@@ -5,6 +5,7 @@
 
 {# Residential/Commercial matric block #}
 {% set pageContent = entry.pageContentGroup.all() %}
+
 <div class="style-5 sec-2" >
     {% for contentBlock in pageContent %}
     {# Memoize the block type’s handle so we can use it later: #}
@@ -22,9 +23,12 @@
                             {% endif %}
                         </div>
                         <div class="iconStyle">
-                            {% if blockType == 'pageContent' %}
-                                    <img src="{{ contentBlock.icon[0].getUrl(imgQuality) }}" alt="">
+                        {% if blockType == 'pageContent' %}
+                            {% set icon = contentBlock.icon.one() %}
+                            {% if icon %}
+                                <img src="{{ icon.getUrl(imgQuality) }}" alt="">
                             {% endif %}
+                        {% endif %}
                         </div>
                     </div>
                     <div id="" class="right-text mg-top-lg">

@@ -22,7 +22,7 @@ fieldLayouts:
             fieldUid: 4dfe1365-3e16-4576-b624-26977c15aba9 # Icon
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 95292e2b-8f77-44e6-a32c-1fa2760123e3
@@ -70,7 +70,7 @@ fieldLayouts:
             fieldUid: 5ad14467-ae6e-43a2-9412-7e6d43312181 # Image
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 8dbfa19a-4248-469c-a417-0a874df27ad0

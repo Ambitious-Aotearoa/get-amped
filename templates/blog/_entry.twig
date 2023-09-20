@@ -6,6 +6,7 @@
 } %}
 
 {% set currentEntry = entry %}
+
 {% set entries = craft.entries()
     .section('blog')
     .id('not ' ~ currentEntry.id)
