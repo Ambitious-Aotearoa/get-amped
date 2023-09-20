@@ -1224,7 +1224,9 @@ nav{
 
 // ******contact
 .contact-page{
-
+.left .max-800{
+  padding:5vw
+}
   .divider-detail{
     margin-top: 67px;
   }
@@ -1433,9 +1435,12 @@ nav{
       flex-direction: column-reverse;
       .social-links{
         position: absolute;
-        left: 40px;
+        left: 20px;
         bottom: -60px;
         z-index: 1;
+        @media(min-width:768px){
+          left: 40px;
+        }
       }
     }
 
@@ -1450,14 +1455,15 @@ nav{
       z-index: 1;
     }
 
+
     @media (min-width:992px){
       margin-bottom: 0px;
       .small-image{
         display: flex;
         flex-direction: row;
         .social-links{
-          position: relative;
           left: 0px;
+          position: relative;
         }
       }
     }
@@ -1508,7 +1514,7 @@ nav{
   .pods.pod-1 .pod{
     border:none;
     background-color: $red;
-    
+    padding: 0;
     width:100% !important;
     overflow:hidden;
     &:hover{
@@ -1522,20 +1528,24 @@ nav{
       margin-top: 20px;
     }
 
-
+    > div:first-of-type{
+      padding: 4vw;
+    }
     > div:last-of-type{
+
         .bg-detail{
           width: 100%;
           max-width: 300px;
-          margin-top: -41px;
-          margin-bottom: 40px;
           display:none;
+          &:first-of-type{
+            margin-bottom: 40px;
+          }
           &.bottom{
-            margin-bottom: -41px;
             margin-top: 40px;
           }
         }
     }
+
 
     @media (min-width:992px){
       h3{
@@ -1555,19 +1565,17 @@ nav{
         max-width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         position: relative;
         align-items: center;
+        padding:0;
+        padding-right: 4vw;
         .bg-detail{
           display:block;
           width: 100%;
           max-width: 300px;
-          // margin-bottom: 8vw;
- 
-
-
         }
-    }
+      }
     }
   }
 
