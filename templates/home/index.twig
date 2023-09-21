@@ -30,6 +30,17 @@
 
 {% block content %}
 <div class="homepage">
+
+<div class="hero">
+  <h1>
+   <span class="x"><span>Your Trusted Partner</span></span>
+    <span class="x"><span><span class="sm">Powering Wellington and the Kapiti Coast</span>For Everything</span></span>
+    <span class="x"><span>Electric</span></span>
+  </h1>
+</div>
+
+
+
 <div class="style-5 sec-1" >
   <div class="">
     <div class="d-lg-flex">
@@ -213,23 +224,44 @@
           <div><img src="/uploads/siteImages/quote.svg" alt="Decorative icon quote marks"></div>
         </div>
       </div>
-      <div class="right-size">
-        {% for entry in entries %}
-          <div class="testimonial-text">
-          {{ entry.quote }}
-          </div>
-          <div class="test-author">
-            <div class="img-auth">
-              <img src="{{ entry.profilePic[0].getUrl('customerProfilePic') }}" alt="Customer profile image">
-            </div>
-            <div class="text-auth">
-              <p><span> {{entry.title }}</span></p>
-              <p>{{entry.customerLocation}}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
 
+      <div class="right-size">
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              {% for entry in entries %}
+              <div class="swiper-slide">
+
+                        <div class="testimonial-text">
+                        {{ entry.quote }}
+                        </div>
+                        <div class="test-author">
+                          <div class="img-auth">
+                            <img src="{{ entry.profilePic[0].getUrl('customerProfilePic') }}" alt="Customer profile image">
+                          </div>
+                          <div class="text-auth">
+                            <p><span> {{entry.title }}</span></p>
+                            <p>{{entry.customerLocation}}</p>
+                          </div>
+                        </div>
+                  
+
+              </div>
+              {% endfor %}
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+      </div>
     </div>
   </div>
 </div> 
