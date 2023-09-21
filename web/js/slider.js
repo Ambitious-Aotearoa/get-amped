@@ -9,11 +9,12 @@ const swiper1 = new Swiper(".swiper", {
     spaceBetween: 20,
     centeredSlides: false,
   
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
-  
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+
+    //transition speed
     speed: 800,
 
   
@@ -23,11 +24,11 @@ const swiper1 = new Swiper(".swiper", {
       clickable: true
     },
   
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
+    // // Navigation arrows
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev"
+    // },
   
     // And if we need scrollbar
     scrollbar: {
