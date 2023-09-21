@@ -24,7 +24,8 @@
             {% if entry.heroImage|length %}
                 {% set featureImage = entry.heroImage.one() %}
                 <div class="bg-img bg-height" style="background-image: url('{{ featureImage.getUrl(imgQuality) }}');">
-                    <div class="absolute-wrapper">
+                    <div class="bg-grad-1">
+                                        <div class="absolute-wrapper">
                         <div class="single-svg">
                             {% include '_partials/svg/lg-cap-grey.svg' %}
                         </div>
@@ -35,6 +36,7 @@
                                 {{ entry.heroText }}
                             {% endif %}
                         </p>
+                    </div>
                     </div>
                 </div>
             {% endif %}

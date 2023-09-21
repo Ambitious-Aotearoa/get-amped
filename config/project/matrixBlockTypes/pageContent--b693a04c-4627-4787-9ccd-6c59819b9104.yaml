@@ -58,7 +58,7 @@ fieldLayouts:
             fieldUid: df318d16-61ea-4966-9d35-98451a6b6436 # Button text
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: d9b4a856-683e-42fc-9ae3-a7a14da9e9c6
