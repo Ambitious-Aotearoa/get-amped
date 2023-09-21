@@ -147,7 +147,7 @@ p.pre-header{
       font-family: $button;
       margin: 0 10px 0 10px;
       color:$white;
-      @media(min-width:12000px){
+      @media(min-width:1200px){
         font-size:16px;
         margin: 0 26px 0 20px;
       }
@@ -1009,15 +1009,22 @@ nav{
   .bkgd-800 .pod-wrapper{
     @include bg-img(url("/uploads/siteImages/bg-home-btm.svg"), 100% 100%, contain);
   }
-
-  .divider-detail{
-
-    margin-bottom: 4vw;
-    @media (min-width:992px){
-      margin-top: 5vw;
-    }
+  .style-5 .intro-text{
+    margin-top: 0;
   }
 
+  .bg-img-one.bg-red{
+    background-position: 0 0;
+  }
+
+  .contact h2{
+    margin-bottom: 4.5vw;
+  }
+  section h2{
+    @media(min-width:1200px){
+      max-width: 90%;
+    }
+  }
 }
 
 .services{
@@ -1428,8 +1435,9 @@ nav{
       padding-top:0;
       color:#D1D5DB
     }
-    .left-size img{
-      width: 100%;
+    .left-size .bg-img{
+      height: 400px;
+      background-position: 60% 50%;
     }
 
     .small-image{

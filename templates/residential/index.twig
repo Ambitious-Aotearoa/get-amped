@@ -3,7 +3,7 @@
 
 {# Images on this page weight #}
 
-{% set posts = craft.entries().section('residential').all() %}
+{% set posts = craft.entries().section('residential').orderBy('postDate asc').all() %}
 {% block content %}
 
 <div class="services">
