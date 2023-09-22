@@ -18,3 +18,11 @@
 
 
 
+@font-face {
+    font-family: 'helvetica_neue_lt_pro_lite';
+    src: url('/fonts/helveticaneueltprolt-webfont.woff2') format('woff2'),
+         url('/fonts/helveticaneueltprolt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
