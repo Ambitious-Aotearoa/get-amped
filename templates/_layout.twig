@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ craft.app.language }}">
 <head>
-  <meta charset="utf-8"/>
-  <title>{{ siteName }}</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-  {% do view.registerCssFile(url('scss/assets/scss/style.scss')) %}
-  {% do craft.app.view.registerCssFile('@web/styles.css') %}
-  <link rel="stylesheet" href="https://use.typekit.net/cic1emf.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-</head>
-<header>
+    {% block head %}
+      <meta charset="utf-8"/>
+      <title>{{ siteName }}</title>
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+      {% do craft.app.view.registerCssFile('@web/assets/styles/main.css') %}
+      <link rel="stylesheet" href="https://use.typekit.net/cic1emf.css">
 
-</header>
+    {% endblock %}
+</head>
   
 <body >
   {% include "_partials/navigation.twig" %}
@@ -26,9 +24,9 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <script  src="/js/nav-bar.js"></script>
-  <script  src="/js/slider.js"></script>
-   <script  src="/js/script.js"></script>
+  <script  src="/assets/js/nav-bar.js"></script>
+  <script  src="/assets/js/slider.js"></script>
+  <script  src="/assets/js/script.js"></script>
 
 </body>
 </html>
