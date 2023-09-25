@@ -339,14 +339,12 @@ nav ul {
 nav ul li a:hover {
   color: #C81E1E;
 }
+nav .dropdown-menu {
+  border-width: 0;
+  border-radius: 0;
+}
 nav .dropdown-menu.show ul li:hover a {
   color: #C81E1E;
-}
-@media (min-width: 992px) {
-  nav .dropdown-menu.show ul {
-    width: 100vw;
-    left: 0;
-  }
 }
 nav.navbar .nav-item:not(:last-child) {
   margin-right: 10px;
@@ -382,12 +380,55 @@ nav a#navbarDropdown {
 }
 nav .dropdown-menu {
   top: 80%;
+  padding: 0;
 }
 nav.navbar-light .navbar-nav .nav-link {
   color: #111928;
 }
 nav.navbar-light .navbar-nav .nav-link:hover {
   color: #C81E1E;
+}
+
+.megamenu-li {
+  position: static;
+}
+
+.megamenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
+}
+.megamenu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  border-width: 0;
+}
+.megamenu ul li {
+  width: 25%;
+  background-color: #f9fafb;
+  display: flex;
+}
+.megamenu ul li a {
+  border-left: 1px solid #E5E7EB;
+  border-bottom: 1px solid #E5E7EB;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.megamenu ul li a img {
+  margin-right: 10px;
+  width: 40px;
+}
+.megamenu ul li a svg path {
+  fill: #E5E7EB;
+}
+.megamenu ul li:nth-of-type(5) a, .megamenu ul li:nth-of-type(6) a, .megamenu ul li:nth-of-type(7) a, .megamenu ul li:nth-of-type(8) a {
+  border-bottom-width: 0;
 }
 
 @media (min-width: 992px) {

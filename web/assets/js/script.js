@@ -24,3 +24,8 @@ function resizeTextBox(){
 
 }
 
+// $(document).ready(function() {
+// 	$(".megamenu").on("hover", function(e) {
+// 		e.stopPropagation();
+// 	});
+// });
