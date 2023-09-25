@@ -472,6 +472,7 @@ nav{
     padding: 0px;
   }
 
+
   @media (min-width:768px){
     .intro-text{
       margin-top:5vw;
@@ -521,9 +522,11 @@ nav{
     }
     .right-text{
       text-align: right;
+      p{
+        max-width: 530px; 
+        margin-left: auto;
+      }
     }
-
-    
   }
 
 
@@ -536,14 +539,20 @@ nav{
 
   @media (min-width:1200px){
     .mg-top-lg{
-      margin-top:8em;
+      margin-top:5em;
     }
   }
 
-  @media (min-width:1800px){
+  @media (min-width:1600px){
+    .right .max-800,
+    .left .max-800{
+      padding:90px 80px;
+    }
+
     .right .max-800{
       margin-right:8%;
     }
+    
   }
 }
 
@@ -1223,6 +1232,8 @@ nav{
       display: flex;
       align-items: flex-end;
       padding-top: 60px;
+      max-width: 1060px;
+      margin-left: auto;
     }
   }
 

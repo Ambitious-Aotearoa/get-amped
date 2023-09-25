@@ -1,6 +1,6 @@
 
-{% set residential = craft.entries().section('residential').all() %}
-{% set commercial = craft.entries().section('commercial').all() %}
+{% set residential = craft.entries().section('residential').orderBy('postDate asc').all() %}
+{% set commercial = craft.entries().section('commercial').orderBy('postDate asc').all() %}
 {% set blog = craft.entries().section('blog').all() %}
 
 <nav class="navbar navbar-expand-lg navbar-light">
