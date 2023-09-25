@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aaf0963c82240fc0bdf72c4913314b6c",
+    "content-hash": "42c848896b190ee20d943b4b195f6e40",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -54,91 +54,6 @@
                 "markdown-extra"
             ],
             "time": "2018-03-26T11:24:36+00:00"
-        },
-        {
-            "name": "cloudgrayau/pitch",
-            "version": "2.3.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cloudgrayau/pitch/zipball/888ca4127cc4e211f945f43caa41a52cfa60d440",
-                "reference": "888ca4127cc4e211f945f43caa41a52cfa60d440",
-                "shasum": ""
-            },
-            "require": {
-                "cloudgrayau/utils": "^1.0.0",
-                "craftcms/cms": "^4.0",
-                "matthiasmullie/minify": "^1.3.71",
-                "php": "^8.0",
-                "scssphp/scssphp": "^1.11.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Pitch",
-                "handle": "pitch",
-                "developer": "Cloud Gray Pty Ltd",
-                "developerUrl": "https://cloudgray.com.au/",
-                "documentationUrl": "https://github.com/cloudgrayau/pitch/blob/craft4/README.md",
-                "changelogUrl": "https://raw.githubusercontent.com/cloudgrayau/pitch/craft4/CHANGELOG.md",
-                "class": "cloudgrayau\\pitch\\Pitch"
-            },
-            "autoload": {
-                "psr-4": {
-                    "cloudgrayau\\pitch\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cloud Gray Pty Ltd",
-                    "homepage": "https://cloudgray.com.au/"
-                }
-            ],
-            "description": "On the go SCSS compiling, CSS/JS minifying, merging and caching.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "pitch"
-            ],
-            "support": {
-                "docs": "https://github.com/cloudgrayau/pitch",
-                "issues": "https://github.com/cloudgrayau/pitch/issues"
-            },
-            "time": "2023-08-30T23:25:48+00:00"
-        },
-        {
-            "name": "cloudgrayau/utils",
-            "version": "1.0.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cloudgrayau/utils/zipball/bd79cc1f170a84a01aee3a7d34c57c2bb4061285",
-                "reference": "bd79cc1f170a84a01aee3a7d34c57c2bb4061285",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0",
-                "php": "^8.0"
-            },
-            "type": "yii-module",
-            "autoload": {
-                "psr-4": {
-                    "cloudgrayau\\utils\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cloud Gray Pty Ltd",
-                    "homepage": "https://cloudgray.com.au/"
-                }
-            ],
-            "description": "Base plugin utilities for Craft CMS.",
-            "time": "2023-05-22T03:45:47+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -1807,138 +1722,6 @@
             "time": "2022-04-13T08:02:27+00:00"
         },
         {
-            "name": "lsolesen/pel",
-            "version": "0.9.12",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pel/pel/zipball/b95fe29cdacf9d36330da277f10910a13648c84c",
-                "reference": "b95fe29cdacf9d36330da277f10910a13648c84c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "lsolesen\\pel\\": "src/"
-                }
-            },
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Lars Olesen",
-                    "email": "lars@intraface.dk",
-                    "homepage": "http://intraface.dk",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Martin Geisler",
-                    "email": "martin@geisler.net",
-                    "homepage": "http://geisler.net",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP Exif Library. A library for reading and writing Exif headers in JPEG and TIFF images using PHP.",
-            "homepage": "http://pel.github.com/pel/",
-            "keywords": [
-                "exif",
-                "image"
-            ],
-            "time": "2022-02-18T13:20:54+00:00"
-        },
-        {
-            "name": "matthiasmullie/minify",
-            "version": "1.3.71",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/matthiasmullie/minify/zipball/ae42a47d7fecc1fbb7277b2f2d84c37a33edc3b1",
-                "reference": "ae42a47d7fecc1fbb7277b2f2d84c37a33edc3b1",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "matthiasmullie/path-converter": "~1.1",
-                "php": ">=5.3.0"
-            },
-            "suggest": {
-                "psr/cache-implementation": "Cache implementation to use with Minify::cache"
-            },
-            "bin": [
-                "bin/minifycss",
-                "bin/minifyjs"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MatthiasMullie\\Minify\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Matthias Mullie",
-                    "email": "minify@mullie.eu",
-                    "homepage": "https://www.mullie.eu",
-                    "role": "Developer"
-                }
-            ],
-            "description": "CSS & JavaScript minifier, in PHP. Removes whitespace, strips comments, combines files (incl. @import statements and small assets in CSS files), and optimizes/shortens a few common programming patterns.",
-            "homepage": "https://github.com/matthiasmullie/minify",
-            "keywords": [
-                "JS",
-                "css",
-                "javascript",
-                "minifier",
-                "minify"
-            ],
-            "time": "2023-04-25T20:33:03+00:00"
-        },
-        {
-            "name": "matthiasmullie/path-converter",
-            "version": "1.1.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/matthiasmullie/path-converter/zipball/e7d13b2c7e2f2268e1424aaed02085518afa02d9",
-                "reference": "e7d13b2c7e2f2268e1424aaed02085518afa02d9",
-                "shasum": ""
-            },
-            "require": {
-                "ext-pcre": "*",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "MatthiasMullie\\PathConverter\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Matthias Mullie",
-                    "email": "pathconverter@mullie.eu",
-                    "homepage": "http://www.mullie.eu",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Relative path converter",
-            "homepage": "http://github.com/matthiasmullie/path-converter",
-            "keywords": [
-                "converter",
-                "path",
-                "paths",
-                "relative"
-            ],
-            "time": "2019-02-05T23:41:09+00:00"
-        },
-        {
             "name": "mikehaertl/php-shellcommand",
             "version": "1.7.0",
             "dist": {
@@ -2888,65 +2671,6 @@
                 "yii"
             ],
             "time": "2020-07-16T12:34:01+00:00"
-        },
-        {
-            "name": "scssphp/scssphp",
-            "version": "v1.11.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scssphp/scssphp/zipball/33749d12c2569bb24071f94e9af828662dabb068",
-                "reference": "33749d12c2569bb24071f94e9af828662dabb068",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-json": "*",
-                "php": ">=5.6.0"
-            },
-            "suggest": {
-                "ext-iconv": "Can be used as fallback when ext-mbstring is not available",
-                "ext-mbstring": "For best performance, mbstring should be installed as it is faster than ext-iconv"
-            },
-            "bin": [
-                "bin/pscss"
-            ],
-            "type": "library",
-            "extra": {
-                "bamarni-bin": {
-                    "forward-command": false,
-                    "bin-links": false
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "ScssPhp\\ScssPhp\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anthon Pang",
-                    "email": "apang@softwaredevelopment.ca",
-                    "homepage": "https://github.com/robocoder"
-                },
-                {
-                    "name": "Cédric Morin",
-                    "email": "cedric@yterium.com",
-                    "homepage": "https://github.com/Cerdic"
-                }
-            ],
-            "description": "scssphp is a compiler for SCSS written in PHP.",
-            "homepage": "http://scssphp.github.io/scssphp/",
-            "keywords": [
-                "css",
-                "less",
-                "sass",
-                "scss",
-                "stylesheet"
-            ],
-            "time": "2022-09-02T21:24:55+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -4535,92 +4259,6 @@
             "time": "2022-09-28T08:42:51+00:00"
         },
         {
-            "name": "verbb/base",
-            "version": "2.0.2",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/ced85b38b7afd51251ab806c44d2fb05669c0181",
-                "reference": "ced85b38b7afd51251ab806c44d2fb05669c0181",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "php": "^8.0.2"
-            },
-            "type": "yii-module",
-            "autoload": {
-                "psr-4": {
-                    "verbb\\base\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
-            "time": "2023-05-10T02:57:47+00:00"
-        },
-        {
-            "name": "verbb/image-resizer",
-            "version": "3.0.7",
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/verbb/image-resizer/zipball/c87abfb24dcf5f11cf7fcdd3d0b48c59aca29815",
-                "reference": "c87abfb24dcf5f11cf7fcdd3d0b48c59aca29815",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^4.0.0",
-                "lsolesen/pel": "^0.9.6",
-                "php": "^8.0.2",
-                "verbb/base": "^2.0.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Image Resizer",
-                "handle": "image-resizer",
-                "description": "Image Resizer resizes your assets when they are uploaded.",
-                "documentationUrl": "https://github.com/verbb/image-resizer",
-                "changelogUrl": "https://raw.githubusercontent.com/verbb/image-resizer/craft-4/CHANGELOG.md",
-                "class": "verbb\\imageresizer\\ImageResizer"
-            },
-            "autoload": {
-                "psr-4": {
-                    "verbb\\imageresizer\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Verbb",
-                    "homepage": "https://verbb.io"
-                }
-            ],
-            "description": "Resize assets when they are uploaded.",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "example"
-            ],
-            "support": {
-                "email": "support@verbb.io",
-                "issues": "https://github.com/verbb/image-resizer/issues?state=open",
-                "source": "https://github.com/verbb/image-resizer",
-                "docs": "https://github.com/verbb/image-resizer",
-                "rss": "https://github.com/verbb/image-resizer/commits/v2.atom"
-            },
-            "time": "2023-08-17T07:58:23+00:00"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v5.5.0",
             "source": {
@@ -5911,5 +5549,5 @@
     "platform-overrides": {
         "php": "8.0.2"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

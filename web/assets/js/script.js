@@ -25,7 +25,7 @@ function resizeTextBox(){
 }
 
 // $(document).ready(function() {
-// 	$(".megamenu").on("hover", function(e) {
+// 	$(".megamenu").on("mouseenter", function(e) {
 // 		e.stopPropagation();
 // 	});
 // });

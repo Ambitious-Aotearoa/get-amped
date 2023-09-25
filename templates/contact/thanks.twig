@@ -1,4 +1,5 @@
 {% extends "_layout.twig" %}
+{% set docTitle = 'Thank You | Get Amped Electrical ' %}
 {% block content %}
 <p>Thanks for sending that in, {{ craft.app.request.getQueryParam('from') }}!</p>
     {% if craft.app.session.hasFlash('notice') %}

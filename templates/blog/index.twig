@@ -1,4 +1,7 @@
 {% extends "_layout.twig" %}
+
+{% set docTitle = 'Blog | Get Amped Electrical ' %}
+
 {% set blog = craft.entries().section('blog').orderBy('postDate desc').all() %}
 
 {% set mostRecentPost = blog[0] %}

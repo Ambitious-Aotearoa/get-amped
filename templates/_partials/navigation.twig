@@ -3,7 +3,7 @@
 {% set commercial = craft.entries().section('commercial').orderBy('postDate asc').all() %}
 {% set blog = craft.entries().section('blog').all() %}
 
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light ">
     <a class="navbar-brand" href="{{ siteUrl }}"><img src="{{ contactDetails.companyLogo[0].getUrl() }}" alt="{{contactDetails.imageAltText}}"></a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,21 +35,27 @@
         </div>
       </li>
 
-      <li class="nav-item dropdown ">
+      <li class="nav-item dropdown megamenu-li">
         <div class="d-flex">
-          <a class="nav-link" href="/commercial">Commercial</a>
+          <a class="nav-link" href="/residential">Commercial</a>
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
         </div>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown">
           <ul>
             {% for post in commercial %}
             <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
+              <a href="{{ post.url }}"> 
+              <span>
+                <img src="{{ post.pageIcon[0].getUrl() }}" alt="{{post.title}} decorative icon">
+                {{ post.title }}
+                </span>
+                 {% include '_partials/svg/btn-icon-arrow.svg' %}
+              </a>
             </li>
             {% endfor %}
           </ul>
         </div>
-      </li> 
+      </li>
 
       <li class="nav-item">
         <a class="nav-link" href="/about">About Us</a>

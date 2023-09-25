@@ -1,0 +1,30 @@
+{% extends "_layout.twig" %}
+
+{% set bodyAttributes ={
+    class: "error-page"
+} %}
+
+{% set docTitle = '404 page | Get Amped Electrical ' %}
+
+{% block content %}
+
+<div class="container-fluid " >
+    <div class="wrapper-error-page">
+        <div class="error-wrapper">
+            <h1>404</h1>
+            <div class="image-wrapper">
+                <img src="/uploads/siteImages/404.svg">
+            </div>
+            <p>Oh no. It looks like our wires got crossed!</p>
+
+            <div class="btn dark">
+                <a href="/">
+                {% include '_partials/svg/btn-icon-left.svg' %}
+                <p>Back to safety</p>
+                {% include '_partials/svg/btn-icon-arrow.svg' %}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}

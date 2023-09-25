@@ -2,11 +2,11 @@
 {% extends "_layout.twig" %}
 {# Images on this page weight #}
 {% set imgQuality = {
-  quality: 60,
+  quality: 90,
 } %}
 {# image selection #}
 {% set asset1 = entry.imageOne.one() %}
-
+{% set docTitle = 'Contact | Get Amped Electrical ' %}
 
 {% block content %}
   <div class="style-5 contact contact-page">

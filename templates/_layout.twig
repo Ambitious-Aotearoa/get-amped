@@ -3,17 +3,21 @@
 <head>
     {% block head %}
       <meta charset="utf-8"/>
-      <title>{{ siteName }}</title>
+     <title>{{ docTitle ?? siteName }}</title>
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <link rel="icon" href="/uploads/siteImages/favicon.png" type="image/x-icon" />
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
       {% do craft.app.view.registerCssFile('@web/assets/styles/main.css') %}
       <link rel="stylesheet" href="https://use.typekit.net/cic1emf.css">
-
     {% endblock %}
 </head>
+
+
   
-<body >
+<body {{ attr(bodyAttributes ?? {}) }}>
+<header>
   {% include "_partials/navigation.twig" %}
+</header>
   {% block content %}
   {% endblock %}
   {% include "_partials/footer.twig" %}
