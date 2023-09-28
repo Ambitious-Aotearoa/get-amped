@@ -248,6 +248,12 @@ figure {
     left: 5vw;
   }
 }
+@media (min-width: 1780px) {
+  .bg-grad-1::before {
+    max-width: 1600px;
+    left: unset;
+  }
+}
 
 .divider-detail {
   height: 25px;
@@ -626,7 +632,7 @@ nav.navbar-light .navbar-nav .nav-link:hover {
   .style-5 .right-text {
     text-align: right;
   }
-  .style-5 .right-text p {
+  .style-5 .right-text p:not(.btn a p) {
     max-width: 530px;
     margin-left: auto;
   }

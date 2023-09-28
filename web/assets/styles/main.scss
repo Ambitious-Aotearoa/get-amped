@@ -244,6 +244,11 @@ p.pre-header{
       width:calc(100% - 10vw);
       left: 5vw;
     }
+    @media (min-width:1780px){
+      max-width: 1600px;
+      left: unset;;
+    }
+
   }
 
   .divider-detail{
@@ -693,7 +698,7 @@ nav{
     }
     .right-text{
       text-align: right;
-      p{
+      p:not(.btn a p){
         max-width: 530px; 
         margin-left: auto;
       }
