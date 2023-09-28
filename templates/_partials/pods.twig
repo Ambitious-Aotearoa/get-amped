@@ -1,0 +1,18 @@
+{# //loop icons, display 0 at the beginning of single numbers// #}
+{% set indexDisplay = loop.index < 10 ? '0' ~ loop.index : loop.index %}
+  
+{% if post.url and post.url|length > 0 %}
+<a href="{{ post.url }}" class="d-flex flex-column justify-content-left pod">
+    <p class="pre-header">{{ indexDisplay }}</p>
+      {% if post.pageIcon|length %}
+        <div>
+          {% for icon in post.pageIcon %}
+            <img src="{{ icon.getUrl() }}" alt="{{ post.title }} decorative icon">
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% if post.pageIcon|length %}
+    <h4>{{ post.title }}</h4>
+    {% endif %}
+</a>
+{% endif %}

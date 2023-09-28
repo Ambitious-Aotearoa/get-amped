@@ -1,0 +1,49 @@
+<div class="services">
+    <div class="container-fluid dark hero-header" >
+      <div class="wrapper">
+            <div class="">
+                <h1>
+                {{header}}
+                </h1>
+            </div>
+      </div>
+    </div>
+
+    <div class="wrapper-svg">
+      <div class="residential-svg">
+      {% include '_partials/svg/' ~ svg %}
+      </div>
+      <div class="bg-img bg-height" style="background-image: url('{{bgImg}}');">
+      </div>
+    </div>
+
+    <div class="container-fluid dark style-2" >
+      <div class="wrapper">
+        <div class="d-lg-flex under-img">
+          <div class="left-size">
+            <h3>
+              {{ intro | widont }}
+            </h3>
+          </div>
+          <div class="right-size">
+            <p class="intro-text">
+
+              {{ introPara | widont }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" style-7 pod-wrapper">
+        <div class="">
+          <div class=" ">
+            <div class="d-flex  flex-wrap  pods {{podStyle}}">
+            {% for post in posts %}
+              {% include '_partials/pods.twig' %}
+            {% endfor %}
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

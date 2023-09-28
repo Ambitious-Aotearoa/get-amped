@@ -2,8 +2,13 @@
 
 {% set docTitle = 'Home | Get Amped Electrical ' %}
 
+{% set bodyAttributes ={
+    class: "homepage"
+} %}
+
 {% block head %}
   {{ parent() }}
+  {# Script for testimonial slider #}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 {% endblock %}
 
@@ -30,307 +35,265 @@
 
 
 {% block content %}
-<div class="homepage">
 
-<div class="hero">
-  <h1>
-    <span class="x">
-      <span>Your Trusted Partner</span>
-    </span>
+  <div class="hero">
+    <h1>
+      <span class="x">
+        <span>Your Trusted Partner</span>
+      </span>
+      <span class="x">
+        <span> 
+          <span class="note">Powering Wellington and the Kapiti Coast</span>
+          For Everything
+        </span>
+      </span>
 
-    <span class="x">
-     
-      <span> <span class="note">Powering Wellington and the Kapiti Coast</span>For Everything</span>
-    </span>
+      <span class="x">
+        <span>Electric
+          <span class="note">Your go-to team for residential and light commercial electrical work from Wellington to Ōtaki and everywhere in between.</span>
+        </span>
+      </span>
+    </h1>
 
-    <span class="x">
-      <span>Electric            <span class="note">Your go-to team for residential and light commercial electrical work from Wellington to Ōtaki and everywhere in between.</span></span>
-
-    </span>
-  </h1>
-
-  <div>
-    <p>Powering Wellington and the Kapiti Coast
-    </p>
-    <p>Your go-to team for residential and light commercial electrical work from Wellington to Ōtaki and everywhere in between.</p>
+    <div>
+      <p>Powering Wellington and the Kapiti Coast</p>
+      <p>Your go-to team for residential and light commercial electrical work from Wellington to Ōtaki and everywhere in between.</p>
+    </div>
   </div>
 
+  <div class="style-5 sec-1" >
+    <div class="">
+      <div class="d-lg-flex">
+        <div class="dark half left bg-red">
+          <div class="max-800 d-flex flex-column justify-content-between h-100">
+            <div class="">
+              <p class="pre-header">OUR DIFERENCE</p>
+              <h2>
+                We’re a small team that’s big on service.
+              </h2>
+            </div>
 
-</div>
+            <div class="divider-detail"> 
+              {% include '_partials/svg/sm-cap-red.svg' %}
+            </div>
 
-<div class="style-5 sec-1" >
-  <div class="">
-    <div class="d-lg-flex">
-      <div class="dark half left bg-red">
-        <div class="max-800 d-flex flex-column justify-content-between h-100">
-          <div class="">
-            <p class="pre-header">OUR DIFERENCE</p>
-            <h2>We’re a small team that’s big on service.</h2>
+            <div class="">
+              <p class="intro-text text-right">                  
+                {% set introTitle = "Any local sparkie can tell you about the quality of their work..." %}
+                {{ introTitle | widont }}
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div class="divider-detail"> 
-            <svg width="922" height="29" viewBox="0 0 922 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M739.325 0H715.339V28.7377H739.325C747.236 28.7377 753.632 22.314 753.632 14.3688C753.632 6.42371 747.236 0 739.325 0Z" fill="#F05252"/>
-              <path d="M716.047 7.60742H-658.571" stroke="#F05252" stroke-miterlimit="10"/>
-              <path d="M716.047 21.5537H-658.571" stroke="#F05252" stroke-miterlimit="10"/>
-              <path d="M1257.27 14.3691H753.167" stroke="#F05252" stroke-miterlimit="10"/>
-              </svg>
-          </div>
-
-          <div class="">
-            <p class="intro-text text-right">
-            Any local sparkie can tell you about the quality of their work...
+        <div class="half right bg-grey d-flex justify-content-between flex-column">
+          <div id="test" class="text-right max-800">
+            <p>
+              {% set introPara = "The difference for us is in the care and attention we take on the job site, making sure our work is done right and tidied away first time, every time. Taking the time to talk through your problem or helping you plan your next project makes all the difference. When you work with us, you get service with a smile from a team that genuinely cares. That care filters through everything we do. It's why we prioritise fast response rates, high availability, and a transparent approach to pricing. We’re more than just reliable electricians, we’re the team you’re glad to see again." %}
+              {{ introPara | widont }}
             </p>
           </div>
-        </div>
-      </div>
 
-      <div class="half right bg-grey d-flex justify-content-between flex-column">
-        <div id="test" class="text-right max-800">
-          <p>The difference for us is in the care and attention we take on the job site, making sure our work is done right and tidied away first time, every time. Taking the time to talk through your problem or helping you plan your next project makes all the difference. When you work with us, you get service with a smile from a team that genuinely cares. That care filters through everything we do. It's why we prioritise fast response rates, high availability, and a transparent approach to pricing. We’re more than just reliable electricians, we’re the team you’re glad to see again.</p>
-        </div>
-
-        <div class="bg-img bg-img-one bg-red" style="background-image: url('{{ asset1.getUrl(imgQuality) }}">
-
+          <div class="bg-img bg-img-one bg-red" style="background-image: url('{{ asset1.getUrl(imgQuality) }}"></div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="style-6 sec-1 p-5">
-    <div class="d-sm-flex justify-content-around flex-wrap">
-        <div class="d-flex align-items-center justify-content-between py-2">
-          <div><p>Fast Response Rates</p></div>
-          <div class="px-2"><img src="uploads/siteImages/comment-m.svg" alt="Decorative Icon"></div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between py-2">
-          <div><p>High Availability </p></div>
-          <div class="px-2"><img src="uploads/siteImages/calendar.svg" alt="Decorative Icon"></div>
-        </div>
-        <div class="d-flex align-items-center justify-content-between py-2">
-          <div><p>Transparent Pricing</p></div>
-          <div class="px-2"><img src="uploads/siteImages/money.svg" alt="Decorative Icon"></div>
-        </div>
-    </div>
-</div>
+  <div class="style-6 sec-1 p-5">
+      <div class="d-sm-flex justify-content-around flex-wrap">
+          <div class="d-flex align-items-center justify-content-between py-2">
+            <div><p>Fast Response Rates</p></div>
+            <div class="px-2"><img src="uploads/siteImages/comment-m.svg" alt="Decorative Icon"></div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between py-2">
+            <div><p>High Availability </p></div>
+            <div class="px-2"><img src="uploads/siteImages/calendar.svg" alt="Decorative Icon"></div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between py-2">
+            <div><p>Transparent Pricing</p></div>
+            <div class="px-2"><img src="uploads/siteImages/money.svg" alt="Decorative Icon"></div>
+          </div>
+      </div>
+  </div>
 
-<section class="bkgd-900">
-  <div class="container-fluid style-4 dark" >
-    <div class="wrapper">
-      <div class="d-flex flex-column">
-        <div class="">
-          <p class="pre-header">Residential</p>
-          <h2>Electrical work that keeps your house humming</h2>
-        </div> 
-      </div>
-      <div class="divider-detail">
-    {% include '_partials/svg/lg-round-grey.svg' %}
-      </div>
-      <div class="d-lg-flex">
-        <div class="left-size no-image">
-          <!-- empty -->
+  <section class="bkgd-900">
+    <div class="container-fluid style-4 dark" >
+      <div class="wrapper">
+        <div class="d-flex flex-column">
+          <div class="">
+            <p class="pre-header">Residential</p>
+            <h2>Electrical work that keeps your house humming</h2>
+          </div> 
         </div>
-        <div class="right-size">
-          <p class="intro-text">
-            Friendly, fast and always there when you need us. Whether you are remodelling your home, need a new piece of equipment installed, or just need an electrician in a hurry, we’re here to answer the call.  
-          </p>
-          <div class="btn">
-            <a href="/residential">
-                  {% include '_partials/svg/btn-icon-left.svg' %}
-              <p>Learn more</p>
-                   {% include '_partials/svg/btn-icon-arrow.svg' %}
-            </a>
+        <div class="divider-detail">
+          {% include '_partials/svg/lg-round-grey.svg' %}
+        </div>
+        <div class="d-lg-flex">
+          <div class="left-size no-image">
+            <!-- empty -->
+          </div>
+          <div class="right-size">
+            <p class="intro-text">
+              
+              {% set introRes = "Friendly, fast and always there when you need us. Whether you are remodelling your home, need a new piece of equipment installed, or just need an electrician in a hurry, we’re here to answer the call." %}
+              {{ introRes | widont }}
+            </p>
+            <div class="btn">
+                {% embed '_partials/buttons' %}
+                  {% block url %} /residential {% endblock %}
+                  {% block title %} Learn More {% endblock %}
+                {% endembed %}
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class=" style-7 pod-wrapper">
-    <div>
+
+    <div class="style-7 pod-wrapper">
       <div>
-        <div class="d-flex  flex-wrap  pods pod-8">
+        <div>
+          <div class="d-flex  flex-wrap  pods pod-8">
             {% for post in pageRes %}
-            <a  href='{{ post.url }}' class="d-flex flex-column justify-content-left pod">
-              <p class="pre-header">{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</p>
-              <div class="">
-                <img src="{{ post.pageIcon[0].getUrl() }}" alt="{{post.title}} decorative icon">
-              </div>
-              <h4>{{post.title}}</h4>
-            </a>
+              {% include '_partials/pods.twig' %}
             {% endfor %}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="bkgd-800">
-  <div class="container-fluid style-4 dark" >
+  <section class="bkgd-800">
+    <div class="container-fluid style-4 dark" >
+      <div class="wrapper">
+        <div class="d-flex flex-column">
+          <div class="">
+            <p class="pre-header">light COMMERCIAL</p>
+            <h2>Electrical work that keeps your business running</h2>
+          </div> 
+        </div>
+
+        <div class="divider-detail">
+            {% include '_partials/svg/lg-cap-grey.svg' %}
+        </div>
+    
+
+        <div class="d-lg-flex">
+          <div class="left-size no-image">
+            <!-- empty -->
+          </div>
+          <div class="right-size">
+            <p class="intro-text">
+              {% set introCom = "Need a trusted electrician? See us for help with your commercial fitout, lighting, heating and ventilation needs and general electrical problems. " %}
+              {{ introCom | widont }}
+            </p>
+
+            <div class="btn">
+                {% embed '_partials/buttons' %}
+                  {% block url %} /commercial {% endblock %}
+                  {% block title %} Learn More {% endblock %}
+                {% endembed %}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class=" style-7 pod-wrapper">
+      <div class="">
+        <div class=" ">
+          <div class="d-flex  flex-wrap  pods pod-4">
+            {% for post in pageComm %}
+              {% include '_partials/pods.twig' %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="container-fluid style-4 testimonial" >
     <div class="wrapper">
-      <div class="d-flex flex-column">
-        <div class="">
-          <p class="pre-header">light COMMERCIAL</p>
-          <h2>Electrical work that keeps your business running </h2>
-        </div> 
-      </div>
-
-      <div class="divider-detail">
-           {% include '_partials/svg/lg-cap-grey.svg' %}
-      </div>
-  
-
-      <div class="d-lg-flex">
-        <div class="left-size no-image">
-          <!-- empty -->
+        <div class="d-flex flex-column">
+          <div class="">
+            <p class="pre-header">Lighting and Wiring</p>
+            <h2>Residential electrical work</h2>
+          </div> 
         </div>
-        <div class="right-size">
-          <p class="intro-text">
-            Friendly, fast and always there when you need us. Whether you are remodelling your home, need a new piece of equipment installed, or just need an electrician in a hurry, we’re here to answer the call.
-          </p>
-          <div class="btn">
-            <a href="/commercial">
-                  {% include '_partials/svg/btn-icon-left.svg' %}
-              <p>Learn more</p>
-
-                   {% include '_partials/svg/btn-icon-arrow.svg' %}
-
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class=" style-7 pod-wrapper">
-    <div class="">
-      <div class=" ">
-        <div class="d-flex  flex-wrap  pods pod-4">
-          {% for post in pageComm %}
-          <a  href='{{ post.url }}' class="d-flex flex-column justify-content-left pod">
-            <p class="pre-header">{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</p>
-          {% if post.pageIcon|length %}
-            <div class="">
-              <img src="{{ post.pageIcon[0].getUrl() }}" alt="{{post.title}} decorative icon">
+        <div class="testimonial-wrapper">
+          <div class="quote-mark left-size">
+            <div class="img-wrapper">
+              <div><img src="/uploads/siteImages/quote.svg" alt="Decorative icon quote marks"></div>
             </div>
-            {% endif %}
-            <h4>{{post.title}}</h4>
-          </a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<div class="container-fluid style-4 testimonial" >
-  <div class="wrapper">
-
-      <div class="d-flex flex-column">
-        <div class="">
-          <p class="pre-header">Lighting and Wiring</p>
-          <h2>Residential electrical work</h2>
-        </div> 
-      </div>
-
-      <div class="testimonial-wrapper">
-        <div class="quote-mark left-size">
-
-          <div class="img-wrapper">
-            <div><img src="/uploads/siteImages/quote.svg" alt="Decorative icon quote marks"></div>
           </div>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              {% for entry in entries %}
+              <div class="swiper-slide">
+                  <div class="testimonial-text">
+                    {% if entry.quote %}
+                        {{ entry.quote | widont }}
+                    {% endif %}
+                  </div>
+                  <div class="test-author">
+                    {% set image = entry.profilePic.one() %}
+                    {% if image %}
+                    <div class="img-auth">
+                      <img src="{{ entry.profilePic[0].getUrl('customerProfilePic') }}" alt="Customer profile image">
+                    </div>
+                    {% endif %}
 
-        </div>
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            {% for entry in entries %}
-            <div class="swiper-slide">
-
-                      <div class="testimonial-text">
-                      {% if entry.quote %}
-                         {{ entry.quote }}
+                    <div class="text-auth">
+                      {% if entry.title %}
+                        <p><span> {{entry.title }}</span></p>
                       {% endif %}
-                      </div>
-                      <div class="test-author">
-                      {% set image = entry.profilePic.one() %}
-                        {% if image %}
-                        <div class="img-auth">
-                          <img src="{{ entry.profilePic[0].getUrl('customerProfilePic') }}" alt="Customer profile image">
-                        </div>
-                        {% endif %}
-
-                        <div class="text-auth">
-                          {% if entry.title %}
-                            <p><span> {{entry.title }}</span></p>
-                          {% endif %}
-                          {% if entry.customerLocation %}
-                            <p>{{entry.customerLocation}}</p>
-                          {% endif %}
-                        </div>
-                      </div>
-                
-
+                      {% if entry.customerLocation %}
+                        <p>{{entry.customerLocation}}</p>
+                      {% endif %}
+                    </div>
+                  </div>
+              </div>
+              {% endfor %}
             </div>
-            {% endfor %}
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-
-          <!-- If we need navigation buttons -->
-          {# <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> #}
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
         </div>
-      </div>
-
-
+    </div>
   </div>
-</div>
-
 
   <div class="style-5 contact">
     <div class="">
       <div class="d-lg-flex">
         <div class="dark half left bg-red">
           <div class="max-800">
-
             <div>
               <p class="pre-header">WE’RE ALL EARS</p>
               <h2>Contact Us </h2>
-              
               <div class="divider-detail"> 
                 {% include '_partials/svg/sm-cap-red.svg' %}
               </div>
             </div>
-  
-
-  
             <div class="spread">
               <p class="intro-text">
-                We serve residents and business from Wellington to Ōtaki and everywhere in between. Call us to talk through your project or email our team for a quote. We’ll get back to you as soon as we can.
+              {% set introCon = "We serve residents and business from Wellington to Ōtaki and everywhere in between. Call us to talk through your project or email our team for a quote. We’ll get back to you as soon as we can." %}
+                {{ introCon | widont }}
               </p>
-
               <div class="details-wrapper">
                 <div class="d-sm-flex flex-wrap">
-
                   <div class="contact-detail">
                     <div class="">
                       <img src="/uploads/siteImages/flag.svg" alt="Decorative icon - flag">
                     </div>
                     <div>{{contactDetails.companyAddress}}</p></div>
                   </div>
-
                   <div class="contact-detail">  
                     <div class="">
-                     <img src="/uploads/siteImages/email.svg" alt="Decorative iocn - email">
+                    <img src="/uploads/siteImages/email.svg" alt="Decorative iocn - email">
                     </div>
                     <div><p>Email us at </br> <a href="mailto:{{contactDetails.email}}">{{contactDetails.email}}</a> </p></div>
                   </div>
@@ -348,11 +311,11 @@
               <p class="pre-header">Get in Touch</p>
               <h3>Request a quote </h3>
             </div>
-              {% include '_partials/contactForm.twig' %}
+            {% include '_partials/contactForm.twig' %}
           </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+
 {% endblock %}
