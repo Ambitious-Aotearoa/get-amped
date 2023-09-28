@@ -19,7 +19,7 @@
                         <div>
                             <p class="pre-header">{{ loop.index < 10 ? '0' ~ loop.index : loop.index }}</p>
                             {% if blockType == 'pageContent' %}
-                                <h2>{{contentBlock.heading}}</h2>
+                                <h2>{{contentBlock.heading | widont }}</h2>
                             {% endif %}
                         </div>
                         <div class="iconStyle">

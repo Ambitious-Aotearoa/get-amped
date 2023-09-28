@@ -12,7 +12,7 @@
                     <p class="pre-header">{{ entry.title }}</p>
                 {% endif %}
                 {% if entry.heroTitle %}
-                    <h1>{{ entry.heroTitle }}</h1>
+                    <h1>{{ entry.heroTitle | widont }}</h1>
                 {% endif %}  
             </div>
         </div>
