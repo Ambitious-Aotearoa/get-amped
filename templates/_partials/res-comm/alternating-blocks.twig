@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div id="" class="right-text mg-top-lg">
-                        {{contentBlock.text}}
+                        {{contentBlock.text | widont }}
                         {% if blockType == 'pageContent' and contentBlock.buttonLink|length %}
                             <div class="btn dark">
                             <a href="{{ contentBlock.buttonLink[0].getUrl() }}">
