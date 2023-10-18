@@ -1,0 +1,9 @@
+app: getamped
+ssh_url: getamped@deploy.us1.frbit.com
+git_remote: getamped/master
+before:
+    code/up: {  }
+after:
+    code/down:
+        - 'php craft migrate/all'
+        - 'php craft project-config/apply'
