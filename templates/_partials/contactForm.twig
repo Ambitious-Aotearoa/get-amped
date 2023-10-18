@@ -15,7 +15,7 @@ input#honeypooh { display: none; }
 <form method="post" action="" accept-charset="UTF-8">
     {{ csrfInput() }}
     {{ actionInput('contact-form/send') }}
-    {{ redirectInput('contact/thanks?from={fromEmail}') }}
+    {{ redirectInput('contact/thanks') }}
 
     <div class="form-layout">
         <p><label for="first-name">First Name</label></p>
