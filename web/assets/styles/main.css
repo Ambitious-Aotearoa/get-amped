@@ -29,7 +29,7 @@ body {
   max-width: 2000px;
   min-width: 320px;
   overflow-x: hidden;
-  padding-top: 70px;
+  padding-top: 66px;
 }
 
 ::-webkit-scrollbar {
@@ -334,6 +334,8 @@ div[class^=col] {
   background-color: #fff;
   top: 0;
   left: 0;
+  padding: 0 20px;
+  border-bottom: 2px solid white;
 }
 
 nav {
@@ -399,11 +401,12 @@ nav a#navbarDropdown {
   height: 0;
 }
 nav .dropdown-menu {
-  top: 80%;
+  top: calc(100% - 2px);
   padding: 0;
 }
 nav.navbar-light .navbar-nav .nav-link {
   color: #111928;
+  padding: 20px 0.5rem;
 }
 nav.navbar-light .navbar-nav .nav-link:hover {
   color: #C81E1E;
@@ -425,6 +428,7 @@ nav.navbar-light .navbar-nav .nav-link:hover {
   flex-wrap: wrap;
   padding-left: 0;
   border-width: 0;
+  border-top: 1px solid #E5E7EB;
 }
 .megamenu ul li {
   width: 100%;
@@ -454,9 +458,6 @@ nav.navbar-light .navbar-nav .nav-link:hover {
 .megamenu ul li a svg path {
   fill: #E5E7EB;
 }
-.megamenu ul li:nth-of-type(2), .megamenu ul li:nth-of-type(1) a {
-  border-top: 1px solid #E5E7EB;
-}
 @media (min-width: 600px) {
   .megamenu ul li {
     width: 50%;
@@ -465,10 +466,6 @@ nav.navbar-light .navbar-nav .nav-link:hover {
 @media (min-width: 992px) {
   .megamenu ul li {
     width: 25%;
-  }
-  .megamenu ul li:nth-of-type(5) a, .megamenu ul li:nth-of-type(6) a, .megamenu ul li:nth-of-type(7) a, .megamenu ul li:nth-of-type(8) a {
-    border-bottom-width: 0;
-    border-right-width: 0;
   }
 }
 
