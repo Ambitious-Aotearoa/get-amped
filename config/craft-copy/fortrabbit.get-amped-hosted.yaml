@@ -1,0 +1,9 @@
+app: get-amped-hosted
+ssh_url: get-amped-hosted@deploy.eu2.frbit.com
+git_remote: get-amped-hosted/master
+before:
+    code/up: {  }
+after:
+    code/down:
+        - 'php craft migrate/all'
+        - 'php craft project-config/apply'
