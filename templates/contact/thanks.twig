@@ -1,10 +1,18 @@
 {% extends "_layout.twig" %}
 {% set docTitle = 'Thank You | Get Amped Electrical ' %}
+
+
+
 {% block content %}
-<p>Thanks for sending that in, {{ craft.app.request.getQueryParam('from') }}!</p>
-    {% if craft.app.session.hasFlash('notice') %}
-    <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
-{% elseif craft.app.session.hasFlash('error') %}
-    <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
-{% endif %}
+
+    <div class="bg-red">
+        <p>Thanks for sending that in, {{ craft.app.request.getQueryParam('from') }}!</p>
+        {% if craft.app.session.hasFlash('notice') %}
+        <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+        {% elseif craft.app.session.hasFlash('error') %}
+            <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
+        {% endif %}
+    </div>
+
+
 {% endblock  %}

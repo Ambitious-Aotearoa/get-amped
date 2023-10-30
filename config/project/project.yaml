@@ -1,4 +1,4 @@
-dateModified: 1698700642
+dateModified: 1698701947
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: 'Get Amped Electrical'
@@ -151,8 +151,9 @@ system:
   edition: solo
   live: true
   name: 'Get Amped Electrical'
+  retryDuration: null
   schemaVersion: 4.5.3.0
-  timeZone: America/Los_Angeles
+  timeZone: Pacific/Auckland
 users:
   allowPublicRegistration: false
   defaultGroup: null

@@ -15,14 +15,16 @@ input#honeypooh { display: none; }
 <form method="post" action="" accept-charset="UTF-8">
     {{ csrfInput() }}
     {{ actionInput('contact-form/send') }}
-    {{ redirectInput('contact/thanks') }}
+    {{ redirectInput('contact/thanks?from={firstName}') }}
 
     <div class="form-layout">
-        <p><label for="first-name">First Name</label></p>
+        <p><label for="first-name">First Names*</label></p>
         {{ input('text', 'firstName', submission.firstName ?? '', {
             id: 'first-name',
             autocomplete: 'First Name',
-            placeholder:'First Name'
+            placeholder:'First Name',
+            required: true,
+            
         }) }}
         {{ submission ? _self.errorList(submission.getErrors('firstName')) }}
 
@@ -30,7 +32,8 @@ input#honeypooh { display: none; }
         {{ input('text', 'LastName', submission.LastName ?? '', {
             id: 'last-name',
             autocomplete: 'Last Name',
-            placeholder:'Last Name'
+            placeholder:'Last Name',
+            required: true,
         }) }}
         {{ submission ? _self.errorList(submission.getErrors('LastName')) }}
     </div>
