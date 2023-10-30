@@ -1,4 +1,4 @@
-dateModified: 1698352396
+dateModified: 1698699280
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: 'Get Amped Electrical'
@@ -138,6 +138,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
 system:
   edition: solo
   live: true
