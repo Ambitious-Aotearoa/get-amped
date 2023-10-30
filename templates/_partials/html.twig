@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      /* Custom styles! */
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="email-header">
+        <img
+          class="email-logo"
+          src="{{ siteUrl('uploads/siteImages/get-amped-logo.svg') }}"
+          width="140"
+          alt="{{ siteName }}">
+      </div>
+      <div class="email-body">
+        {{ body }}
+      </div>
+      <div class="email-footer">
+        ©{{ now.format('Y') }}, <a href="{{ siteUrl }}">{{ siteName }}</a>
+      </div>
+    </div>
+  </body>
+</html>

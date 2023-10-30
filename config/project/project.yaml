@@ -1,8 +1,13 @@
-dateModified: 1698699280
+dateModified: 1698700642
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: 'Get Amped Electrical'
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: null
+  transportSettings:
+    messageStream: ''
+    token: $POSTMARK_API
+  transportType: craftcms\postmark\Adapter
 fs:
   hardDisk:
     hasUrls: true
