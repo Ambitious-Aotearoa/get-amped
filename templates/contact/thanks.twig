@@ -1,20 +1,34 @@
 {% extends "_layout.twig" %}
 {% set docTitle = 'Thank You | Get Amped Electrical ' %}
 
-
-
 {% block content %}
-
-    <div class="bg-red thank-you">
-        <p>Thanks {{ craft.app.request.getQueryParam('from') }}!</p>
-        {% if craft.app.session.hasFlash('notice') %}
-
-        <h1 class="dark">Thanks For Reaching Out</h1>
-        <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
-        {% elseif craft.app.session.hasFlash('error') %}
-            <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
-        {% endif %}
+<div class="container-fluid bg-red style-6 sec-2 thank-you">
+    <div class="wrapper">
+        <div>
+            <div class="intro  dark">
+                <p>{{ craft.app.request.getQueryParam('from') }}</p>
+                {% if craft.app.session.hasFlash('notice') %}
+                <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+                {% elseif craft.app.session.hasFlash('error') %}
+                    <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
+                {% endif %}
+                <h1 class="">Thanks For Reaching Out</h1>
+            </div>
+            <div class="flex-wrapper">
+                <div class="">
+                </div>
+                <div>
+                    <p class="intro-text">Lorem ipsum dolor sit amet consectetur </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nihil, nulla reiciendis, magnam eaque rem nobis facere deleniti facilis, doloribus dolor vero consectetur recusandae voluptatum natus earum! Nemo, aperiam molestiae.</p>
+                    <div class="btn dark">
+                        {% embed '_partials/buttons' %}
+                        {% block url %} / {% endblock %}
+                        {% block title %}Back Home{% endblock %}
+                        {% endembed %}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
+</div>
 {% endblock  %}

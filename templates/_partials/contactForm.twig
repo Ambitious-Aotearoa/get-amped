@@ -19,46 +19,52 @@ input#honeypooh { display: none; }
 
 
     <div class="form-layout">
-        <p><label for="first-name">First Names*</label></p>
-        {{ input('text', 'firstName', submission.firstName ?? '', {
-            id: 'first-name',
-            autocomplete: 'First Name',
-            placeholder:'First Name*',
-            required: true,
-            
-        }) }}
-        {{ submission ? _self.errorList(submission.getErrors('firstName')) }}
+        <div>
+            <p><label for="first-name">First Names*</label></p>
+            {{ input('text', 'firstName', submission.firstName ?? '', {
+                id: 'first-name',
+                autocomplete: 'First Name',
+                required: true,
+                
+            }) }}
+            {{ submission ? _self.errorList(submission.getErrors('firstName')) }}
+        </div>
 
-        <p><label for="last-name">Last Name</label></p>
-        {{ input('text', 'LastName', submission.LastName ?? '', {
-            id: 'last-name',
-            autocomplete: 'Last Name',
-            placeholder:'Last Name*',
-            required: true,
-        }) }}
-        {{ submission ? _self.errorList(submission.getErrors('LastName')) }}
+        <div>
+            <p><label for="last-name">Last Name</label></p>
+            {{ input('text', 'LastName', submission.LastName ?? '', {
+                id: 'last-name',
+                autocomplete: 'Last Name',
+                required: true,
+            }) }}
+            {{ submission ? _self.errorList(submission.getErrors('LastName')) }}
+        </div>
     </div>
      <div class="form-layout">
-        <p><label for="from-phone">Phone Number</label></p>
+
+        <div>
+            <p><label for="from-phone">Phone Number</label></p>
             {{ input('tel', 'fromPhone', submission.fromPhone ?? '', {
                 id: 'from-phone',
                 autocomplete:'Phone Number',
-                placeholder:'Phone Number'
             }) }}
             {{ submission ? _self.errorList(submission.getErrors('fromPhone')) }}
-
+            <div id="warning-message" style="color: red; display: none;">Please enter a valid phone number.</div>
+        </div>
+        <div>
             <p><label for="from-email">Email Address*</label></p>
             {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
                 id: 'from-email',
                 autocomplete: 'email',
                 required: true,
-                placeholder:'Email Address*'
             }) }}
             {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
+        </div>
     </div>
 
      <div class="form-layout">
-        <p><label for="message">Message*</label></p>
+        <div>
+            <p><label for="message">Message*</label></p>
         {{ tag('textarea', {
             text: submission.message.body ?? '',
             id: 'message',
@@ -66,8 +72,8 @@ input#honeypooh { display: none; }
             rows: 5,
             cols: 40,
             required: true,
-            placeholder:'Message'
         }) }}
+        </div>
     </div>
 
     <input id="honeypooh" name="honeypooh" type="text">
@@ -83,3 +89,25 @@ input#honeypooh { display: none; }
 
 </form>
 {% endblock %}
+
+
+<script>
+    // Add an event listener to the input field with the id 'from-phone'
+    const fromPhoneInput = document.getElementById('from-phone');
+    const warningMessage = document.getElementById('warning-message');
+
+    fromPhoneInput.addEventListener('input', function () {
+        const inputValue = fromPhoneInput.value;
+        // Define a regex pattern that matches numbers, spaces, and parentheses
+        const regexPattern = /^[0-9\s()]*$/;
+
+        // Test the input value against the regex pattern
+        if (!regexPattern.test(inputValue)) {
+            // If the input doesn't match the pattern, display the warning message
+            warningMessage.style.display = 'block';
+        } else {
+            // If the input matches the pattern, hide the warning message
+            warningMessage.style.display = 'none';
+        }
+    });
+</script>

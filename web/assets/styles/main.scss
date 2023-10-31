@@ -182,7 +182,7 @@ p.pre-header{
     .btn-icon{
       margin-left: 10px;
       @media (min-width:768px){
-        margin-left: 26px;
+        margin-left: 18px;
       }
     }
     .btn-arrow{
@@ -1092,16 +1092,17 @@ nav{
   width: 100%;
   @media (min-width:992px){
     padding: 80px 20px;
-    max-width: 500px;
+    max-width: 600px;
   }
 
   form{
+    margin-top: 30px;
     width: 100%;
     input,textarea{
       width: 100%;
     }
     input{
-      padding:25px 0;
+      padding:18px 0 0 0;
     }
     input,
     textarea{
@@ -1116,8 +1117,13 @@ nav{
       border-bottom: 1px solid $red;
     }
     .form-layout{
-      input:first-of-type{
-        margin-right: 30px;
+      div{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        &:nth-child(2n){
+          margin-left: 20px;
+        }
       }
       textarea{
         margin-top:30px;
@@ -1129,9 +1135,6 @@ nav{
           margin-top:0px;
         }
       }
-    }
-    p label{
-      display: none;
     }
   }
 
@@ -2056,5 +2059,29 @@ nav{
 
 
 .thank-you{
-  text-align: center;
+  .intro{
+    text-align: center;
+  }
+  .flex-wrapper{
+    max-width: 1400px;
+    margin: 4vw  auto;
+    display: flex;
+    > div{
+      width: 50%;
+    }
+   > div:first-of-type{
+      @include bg-img(url("/uploads/images/placeholder-2.jpg"), 50% 50%, cover);
+    }
+    > div:last-of-type{
+      background-color: white;
+      padding: 4vw;
+      box-sizing: border-box;
+    }
+    h1{
+      margin-top: 20px;
+    }
+    p.intro-text{
+      margin-bottom: 30px;
+    }
+  }
 }
