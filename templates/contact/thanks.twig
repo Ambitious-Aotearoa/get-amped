@@ -5,9 +5,11 @@
 
 {% block content %}
 
-    <div class="bg-red">
-        <p>Thanks for sending that in, {{ craft.app.request.getQueryParam('from') }}!</p>
+    <div class="bg-red thank-you">
+        <p>Thank you {{ craft.app.request.getQueryParam('from') }}!</p>
         {% if craft.app.session.hasFlash('notice') %}
+
+        <h1>Thanks For Reaching Out</h1>
         <p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
         {% elseif craft.app.session.hasFlash('error') %}
             <p class="message error">{{ craft.app.session.getFlash('error') }}</p>

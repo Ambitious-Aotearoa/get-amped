@@ -15,14 +15,15 @@ input#honeypooh { display: none; }
 <form method="post" action="" accept-charset="UTF-8">
     {{ csrfInput() }}
     {{ actionInput('contact-form/send') }}
-    {{ redirectInput('contact/thanks?from={firstName}') }}
+    {{ redirectInput('contact/thanks?from={fromEmail}') }}
+
 
     <div class="form-layout">
         <p><label for="first-name">First Names*</label></p>
         {{ input('text', 'firstName', submission.firstName ?? '', {
             id: 'first-name',
             autocomplete: 'First Name',
-            placeholder:'First Name',
+            placeholder:'First Name*',
             required: true,
             
         }) }}
@@ -32,7 +33,7 @@ input#honeypooh { display: none; }
         {{ input('text', 'LastName', submission.LastName ?? '', {
             id: 'last-name',
             autocomplete: 'Last Name',
-            placeholder:'Last Name',
+            placeholder:'Last Name*',
             required: true,
         }) }}
         {{ submission ? _self.errorList(submission.getErrors('LastName')) }}
@@ -51,7 +52,7 @@ input#honeypooh { display: none; }
                 id: 'from-email',
                 autocomplete: 'email',
                 required: true,
-                placeholder:'Email Address'
+                placeholder:'Email Address*'
             }) }}
             {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
     </div>
@@ -73,12 +74,11 @@ input#honeypooh { display: none; }
     {{ submission ? _self.errorList(submission.getErrors('message')) }}
 
     <button type="submit" class="btn dark">
-    <a>
-    {% include '_partials/svg/btn-icon-left.svg' %}
-    
-   <p> Submit</p>
-     {% include '_partials/svg/btn-icon-arrow.svg' %}
-     </a>
+        <a>
+            {% include '_partials/svg/btn-icon-left.svg' %}
+                <p>Submit</p>
+            {% include '_partials/svg/btn-icon-arrow.svg' %}
+        </a>
     </button>
 
 </form>
