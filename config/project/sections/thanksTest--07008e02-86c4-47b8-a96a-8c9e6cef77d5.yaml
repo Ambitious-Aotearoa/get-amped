@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: thanksTest
+name: thanks-test
+propagationMethod: all
+siteSettings:
+  066dea4a-eb24-4ccd-adb4-07aace1d6c2b: # Get Amped Electrical
+    enabledByDefault: true
+    hasUrls: true
+    template: thanks-test/_entry
+    uriFormat: 'thanks-test/{slug}'
+type: channel
