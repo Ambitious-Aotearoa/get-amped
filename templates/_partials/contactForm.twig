@@ -43,14 +43,19 @@ input#honeypooh { display: none; }
      <div class="form-layout">
 
         <div>
-            <p><label for="from-phone">Phone Number</label></p>
-            {{ input('tel', 'fromPhone', submission.fromPhone ?? '', {
-                id: 'from-phone',
-                autocomplete:'Phone Number',
-            }) }}
+            <p><label for="phone">Phone Number</label></p>
+
+            {{ input('text', 'fromPhone', submission.fromPhone ?? '', {
+                    id: 'phone',
+                    autocomplete:'Phone Number',
+                }) 
+            }}
             {{ submission ? _self.errorList(submission.getErrors('fromPhone')) }}
+
             <div id="warning-message" style="color: red; display: none;">Please enter a valid phone number.</div>
         </div>
+
+
         <div>
             <p><label for="from-email">Email Address*</label></p>
             {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
@@ -62,19 +67,27 @@ input#honeypooh { display: none; }
         </div>
     </div>
 
+
+
+
      <div class="form-layout">
         <div>
-            <p><label for="message">Message*</label></p>
-        {{ tag('textarea', {
-            text: submission.message.body ?? '',
-            id: 'message',
-            name: 'message',
-            rows: 5,
-            cols: 40,
-            required: true,
-        }) }}
+            <p><label for="message[body]">Message*</label></p>
+            {{ tag('textarea', 
+                {
+                    text: submission.message.body ?? '',
+                    id: 'message',
+                    name: 'message',
+                    rows: 5,
+                    cols: 40,
+                    required: true,
+                }) 
+            }}
         </div>
     </div>
+
+
+
 
     <input id="honeypooh" name="honeypooh" type="text">
     {{ submission ? _self.errorList(submission.getErrors('message')) }}
@@ -86,14 +99,13 @@ input#honeypooh { display: none; }
             {% include '_partials/svg/btn-icon-arrow.svg' %}
         </a>
     </button>
-
 </form>
 {% endblock %}
 
 
 <script>
-    // Add an event listener to the input field with the id 'from-phone'
-    const fromPhoneInput = document.getElementById('from-phone');
+    // Add an event listener to the input field with the id 'phone'
+    const fromPhoneInput = document.getElementById('phone');
     const warningMessage = document.getElementById('warning-message');
 
     fromPhoneInput.addEventListener('input', function () {

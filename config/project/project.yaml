@@ -123,7 +123,7 @@ plugins:
     settings:
       allowAttachments: ''
       allowedMessageFields: null
-      prependSender: 'On behalf of'
+      prependSender: 'Message from'
       prependSubject: 'New message from Get Amped Electrical'
       successFlashMessage: 'Your message has been sent.'
       toEmail: jennifer@ambitious.co.nz
