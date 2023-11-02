@@ -4,93 +4,61 @@
     {% endif %}
 {% endmacro %}
 
-{% set submission = submission ?? null %}
+{% set message = message ?? null %}
 
+<style>input#honeypooh { display: none; }</style>
 
-{% block content %}
-<style>
-input#honeypooh { display: none; }
-
-</style>
 <form method="post" action="" accept-charset="UTF-8">
     {{ csrfInput() }}
     {{ actionInput('contact-form/send') }}
     {{ redirectInput('contact/thanks?from={fromEmail}') }}
 
-
     <div class="form-layout">
         <div>
-            <p><label for="first-name">First Names*</label></p>
-            {{ input('text', 'firstName', submission.firstName ?? '', {
-                id: 'first-name',
-                autocomplete: 'First Name',
+            <p><label for="firstName">First Name</label></p>
+            {{ input('text', 'message[First Name]', message.message[firstName] ?? '', {
+                id: 'firstName',
                 required: true,
-                
             }) }}
-            {{ submission ? _self.errorList(submission.getErrors('firstName')) }}
+            {{ message ? _self.errorList(message.getErrors('message[firstName]')) }}
         </div>
-
         <div>
-            <p><label for="last-name">Last Name</label></p>
-            {{ input('text', 'LastName', submission.LastName ?? '', {
-                id: 'last-name',
-                autocomplete: 'Last Name',
-                required: true,
+            <p><label for="lastName">Last Name</label></p>
+            {{ input('text', 'message[Last Name]', message.message[lastName] ?? '', {
+                id: 'lastName',
             }) }}
-            {{ submission ? _self.errorList(submission.getErrors('LastName')) }}
+            {{ message ? _self.errorList(message.getErrors('message[lastName]')) }}
         </div>
     </div>
-     <div class="form-layout">
-
+    <div class="form-layout">
         <div>
-            <p><label for="phone">Phone Number</label></p>
-
-            {{ input('text', 'fromPhone', submission.fromPhone ?? '', {
-                    id: 'phone',
-                    autocomplete:'Phone Number',
-                }) 
-            }}
-            {{ submission ? _self.errorList(submission.getErrors('fromPhone')) }}
-
-            <div id="warning-message" style="color: red; display: none;">Please enter a valid phone number.</div>
-        </div>
-
-
-        <div>
-            <p><label for="from-email">Email Address*</label></p>
-            {{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+            <p><label for="from-email">Email</label></p>
+            {{ input('email', 'fromEmail', message.fromEmail ?? '', {
                 id: 'from-email',
                 autocomplete: 'email',
                 required: true,
             }) }}
-            {{ submission ? _self.errorList(submission.getErrors('fromEmail')) }}
+            {{ message ? _self.errorList(message.getErrors('fromEmail')) }}
         </div>
-    </div>
 
-
-
-
-     <div class="form-layout">
         <div>
-            <p><label for="message[body]">Message*</label></p>
-            {{ tag('textarea', 
-                {
-                    text: submission.message.body ?? '',
-                    id: 'message',
-                    name: 'message',
-                    rows: 5,
-                    cols: 40,
-                    required: true,
-                }) 
-            }}
+            <p><label for="phone">Phone</label></p>
+            {{ input('text', 'message[Phone]', message.message[Phone] ?? '', {
+                id: 'phone',
+                required: true,
+            }) }}
+            {{ message ? _self.errorList(message.getErrors('message[Phone]')) }}
         </div>
     </div>
-
-
+    <div class="form-layout">
+        <div>
+            <p><label for="message">Message</label></p>
+            <textarea rows="5" cols="40" id="message" name="message[body]" required>{{ message.message.body ?? '' }}</textarea>
+        </div>
+    </div>
 
 
     <input id="honeypooh" name="honeypooh" type="text">
-    {{ submission ? _self.errorList(submission.getErrors('message')) }}
 
     <button type="submit" class="btn dark">
         <a>
@@ -100,26 +68,4 @@ input#honeypooh { display: none; }
         </a>
     </button>
 </form>
-{% endblock %}
 
-
-<script>
-    // Add an event listener to the input field with the id 'phone'
-    const fromPhoneInput = document.getElementById('phone');
-    const warningMessage = document.getElementById('warning-message');
-
-    fromPhoneInput.addEventListener('input', function () {
-        const inputValue = fromPhoneInput.value;
-        // Define a regex pattern that matches numbers, spaces, and parentheses
-        const regexPattern = /^[0-9\s()]*$/;
-
-        // Test the input value against the regex pattern
-        if (!regexPattern.test(inputValue)) {
-            // If the input doesn't match the pattern, display the warning message
-            warningMessage.style.display = 'block';
-        } else {
-            // If the input matches the pattern, hide the warning message
-            warningMessage.style.display = 'none';
-        }
-    });
-</script>
