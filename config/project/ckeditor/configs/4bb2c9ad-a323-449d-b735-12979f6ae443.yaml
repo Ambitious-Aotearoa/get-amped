@@ -1,0 +1,17 @@
+headingLevels:
+  - 3
+  - 4
+  - 5
+  - 6
+listPlugin: List
+name: Blogs
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - bulletedList
+  - numberedList
+  - blockQuote
+  - underline

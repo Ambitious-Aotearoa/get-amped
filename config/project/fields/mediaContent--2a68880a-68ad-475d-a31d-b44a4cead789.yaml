@@ -8,7 +8,7 @@ searchable: false
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
-  ckeConfig: cb2638c7-1bcf-4d16-ac97-5243e739f82e # Heading Style
+  ckeConfig: 4bb2c9ad-a323-449d-b735-12979f6ae443 # Blogs
   columnType: text
   defaultTransform: null
   enableSourceEditingForNonAdmins: false

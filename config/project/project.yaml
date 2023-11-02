@@ -1,4 +1,4 @@
-dateModified: 1698722234
+dateModified: 1698896007
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: 'Get Amped Electrical'
@@ -42,6 +42,7 @@ meta:
     2a68880a-68ad-475d-a31d-b44a4cead789: 'Media Content' # Media Content
     3fda8fa1-9d3b-442b-90f3-25d2a5bf37a3: Staff # Staff
     4b550893-38e4-46d7-ab57-550e9d8ca350: Quote # Quote
+    4bb2c9ad-a323-449d-b735-12979f6ae443: Blogs # Blogs
     4dfe1365-3e16-4576-b624-26977c15aba9: Icon # Icon
     5ad14467-ae6e-43a2-9412-7e6d43312181: Image # Image
     5f28be65-6ad9-4b5b-aac8-c4e15edd914f: Default # Default
@@ -68,7 +69,6 @@ meta:
     1058d120-1961-4fab-b32d-9d66766c6da3: 'Image Two' # Image Two
     3515d6db-6243-4d34-a80a-574f694254f1: 'Media Intro' # Media Intro
     3733d377-59f7-40d4-a946-80540df385ab: Blog # Blog
-    07008e02-86c4-47b8-a96a-8c9e6cef77d5: thanks-test # thanks-test
     8590bbd2-bc27-4c40-9410-61cb7132fd57: Residential # Residential
     040439e7-3d13-4c0c-be0e-e2ca6899f7ef: 'Phone Number' # Phone Number
     48527bb6-858e-4858-b159-48ff4f9ffc9b: 'Media Image' # Media Image
@@ -79,7 +79,6 @@ meta:
     815517b8-7a33-4572-b570-300d8c06c083: Text # Text
     816166c2-da71-4678-9bf0-2245eda0b450: icons # icons
     8241036e-0b6d-4441-b0d6-ec8f9556f979: custom # custom
-    63821165-8c27-40d4-886c-4a01931bb071: Default # Default
     a0a95219-2a55-475d-927f-ffdc56a2c61c: 'Staff Image' # Staff Image
     a6b0622f-f24c-4f99-9b6a-64b9b74f2fb9: 'Author Profile' # Author Profile
     a66f1c16-63f3-45d2-a125-ca3019d9fbef: 'Heading ' # Heading 
