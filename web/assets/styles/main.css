@@ -26,7 +26,6 @@ body {
   position: relative;
   height: 100%;
   margin: 0;
-  max-width: 2000px;
   min-width: 320px;
   overflow-x: hidden;
   padding-top: 66px;
@@ -653,6 +652,12 @@ nav.navbar-light .navbar-nav .nav-link:hover {
     margin-right: 8%;
   }
 }
+@media (min-width: 1600px) {
+  .style-5 .right .max-800 {
+    margin-left: 8%;
+    margin-right: auto;
+  }
+}
 
 .style-6 .border-btm {
   margin: 0 10px;
@@ -899,6 +904,11 @@ nav.navbar-light .navbar-nav .nav-link:hover {
     margin-top: 40px;
   }
 }
+@media (min-width: 2000px) {
+  .pods .pod {
+    padding: 60px;
+  }
+}
 @media (min-width: 768px) {
   .pods.pod-4 .pod:nth-of-type(4),
   .pods.pod-4 .pod:nth-of-type(3) {
@@ -995,6 +1005,13 @@ nav.navbar-light .navbar-nav .nav-link:hover {
   .form-wrapper {
     padding: 80px 20px;
     max-width: 600px;
+  }
+}
+@media (min-width: 2000px) {
+  .form-wrapper {
+    max-width: 600px;
+    margin-left: 8%;
+    margin-right: auto;
   }
 }
 .form-wrapper form {
@@ -1613,7 +1630,7 @@ nav.navbar-light .navbar-nav .nav-link:hover {
 }
 
 .blog {
-  padding-bottom: 60px;
+  padding-bottom: 8vw;
   background-color: #171A1C;
   background-image: url("/uploads/siteImages/bg-btm-left.svg");
   background-repeat: no-repeat;
